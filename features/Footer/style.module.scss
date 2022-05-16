@@ -1,0 +1,45 @@
+.footer{
+    background-color: #232833;
+    color: #ffffff;
+    .footerMain{
+        display: flex;
+        justify-content: space-around;
+        .footerRegions{
+            .item{
+                display: flex;
+                align-items: center;
+                .images{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .footerSocial{
+            .icons1{
+                width: 25px;
+                height: 25px;
+            }
+            .icons{
+                margin-left: 20px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .footerApps{
+            .images{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+                .imagesItem{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+            .item{
+                color: #ffffffcc;
+                padding: 8px 0;
+            }
+            span{
+                margin-left: 10px;
+            }
+    }
+}

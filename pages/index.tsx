@@ -5,7 +5,6 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-
     <div className={styles.container}>
       <Head>
         <title>NextJS Quandoo</title>
@@ -14,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
     <h1>demo</h1>
     </div>
-  )
+  );
 }
 
 export default Home
