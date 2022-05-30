@@ -22,6 +22,7 @@ import turkey from "../../public/images/turkey.png";
 import netherlands from "../../public/images/netherlands.png";
 import singapore from "../../public/images/singapore.png";
 import hongkong from "../../public/images/hong-kong.png";
+import imgfooter from "../../public/images/imgfooter.png.jpg";
 
 export interface FooterProps {}
 
@@ -127,6 +128,10 @@ export default function Footer(props: FooterProps) {
           </div>
         </div>
       </div>
+      <div className={style.footerBottom}>
+            <Image src={imgfooter} width={200} height={40} alt="images footer" />
+            <div className={style.offcialApps}> ©2022 Quandoo GmbH. All rights reserved </div>
+        </div>
     </footer>
   );
 }

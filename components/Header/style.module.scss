@@ -1,0 +1,40 @@
+    .header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background: #ffff;
+        .headerMain{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            .headerLeft{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+            }     
+            .headerRight{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                font-size: 0.9rem;
+                .items1{
+                    color: #1873c3;
+                    padding: 20px 20px;
+                }
+                .items2{
+                    display: flex;
+                    align-items: center;
+                    color: #3a4354b3;
+                    border-left: 1px solid rgba(128, 128, 128, 0.17);
+                    height: 100%;
+                    padding: 15px 15px;
+    
+                }
+            }
+        }
+    }

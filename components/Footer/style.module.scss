@@ -4,6 +4,7 @@
     .footerMain{
         display: flex;
         justify-content: space-around;
+        padding-top: 180px;
         .footerRegions{
             .item{
                 display: flex;
@@ -41,5 +42,13 @@
             span{
                 margin-left: 10px;
             }
+    }
+    .footerBottom{
+        margin-left: 60px;
+        padding-bottom: 40px;
+        .offcialApps{
+            margin-left: 15px;
+            color: #ffffffcc;
+        }
     }
 }
