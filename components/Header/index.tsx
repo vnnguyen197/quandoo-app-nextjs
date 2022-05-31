@@ -25,10 +25,9 @@ export default function Header(props: HeaderProps) {
             <div className={style.items4}>
               <FontAwesomeIcon className={style.icons} icon={faCircleUser} size="lg" fixedWidth />
             </div>
-            <div className={style.items3}>
-              {item.sub_title4}
+            <div className={style.items3}> {item.sub_title4}
               <FontAwesomeIcon className={style.icon}  icon={faAngleDown} size="lg" fixedWidth />
-              </div>
+            </div>
           </div>
         </div>
       ))}
