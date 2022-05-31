@@ -113,13 +113,13 @@ export default function Footer(props: FooterProps) {
           </div>
         </div>
         <div className={style.footerSocial}>
-          <h3>SOCIAL</h3>
+          <h3 className={style.h3}>SOCIAL</h3>
           <FontAwesomeIcon icon={faFacebook} className={style.icons1} />
           <FontAwesomeIcon icon={faTwitter} className={style.icons} />
           <FontAwesomeIcon icon={faInstagram} className={style.icons} />
         </div>
         <div className={style.footerApps}>
-          <h3>APPS</h3>
+          <h3 className={style.h3}>APPS</h3>
           <div className={style.images}>
               <div className={style.imagesItem}>
                 <Image  src={googlePlay} width={136} height={40} alt="google play" />

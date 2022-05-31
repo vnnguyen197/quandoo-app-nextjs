@@ -44,11 +44,28 @@
             }
     }
     .footerBottom{
-        margin-left: 60px;
         padding-bottom: 40px;
         .offcialApps{
             margin-left: 15px;
             color: #ffffffcc;
         }
     }
+}
+
+// apply to tablet
+@media only screen and (max-width: 1025px) {
+        .footerMain{
+            flex-wrap: wrap !important;
+        }
+}
+
+// apply to mobile
+@media only screen and (max-width: 600px) {
+            .footerMain{
+                margin-left: 20px;
+                flex-direction: column !important;
+                .h3{
+                    display: none;
+        }
+    }           
 }
