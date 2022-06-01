@@ -1,46 +1,89 @@
-.slide{
-  .slideMain{
-    .slideImg{
-    background-size: cover;
-    // display: flex;
-    display: inline !important;
-
-    .images{
-      display: inline !important;
+.slide {
+  .slideMain {
+    .slideImg {
+      background-image: url("https://qcm.imgix.net/home_hero_bg.png?auto=format&w=1200");
       background-size: cover;
-
-    }
-    } 
-    .slideContent{
-      .contentBottom{
-        input{
-          margin-left: 15px;
-          border: 1px solid rgba(128, 128, 128, 0.4);
-          padding: 10px;
-          border-radius: 10px;
-          font-size: 1rem;
-          width: 320px;
-          &:focus-visible {
+      background-repeat: no-repeat;
+      height: 110vh;
+      .slideContent {
+        margin: 0 180px;
+        .content{
+          padding-top: 100px;
+          padding-bottom: 50px;
+          h1{
+            color: #ffff;
+            font-size: 3.5em;
+            margin-bottom: 0;
+          }
+          h2{
+            margin-top: 10px;
+            color: #ffff;
+            font-size: 1.3rem;
+          }
+        }
+        .contentBottom {
+          .inputFind, .inputSingapore {
+            margin-right: 15px;
+            border: 1px solid rgba(128, 128, 128, 0.4);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1rem;
+            &:focus-visible {
               outline: none;
               box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
             }
-      }
-      button{
-          background-color: #f8b333;
-          border-radius: 10px;
-          border: 1px solid #f8b333;
-          margin-left: 15px;
-          width: 96px;
-          height: 40px;
-          color: #fff;
-          font-weight: bold;
-          font-size: 1rem;
-          &:hover{
-              cursor: pointer;
           }
-      }
+          .inputFind{
+            width: 570px;
+            height: 56px;
+          }
+          .inputSingapore{
+            width: 350px;
+            height: 56px;
+          }
 
-      } 
+          button {
+            background-color: #f8b333;
+            border-radius: 10px;
+            border: 1px solid #f8b333;
+            margin-right: 15px;
+            width: 125px;
+            height: 56px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            &:hover {
+              cursor: pointer;
+              background-color: goldenrod;
+            }
+          }
+        }
+      }
     }
   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .slideImg {
+    height: 80vh !important;
+    .slideContent {
+      .contentBottom{
+        display: flex;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .slideImg {
+    height: 30vh !important;
+    .slideContent {
+      .content{
+        display: none;
+      }
+      .contentBottom{
+        display: none;
+      }
+    }
+  }
+ 
 }
