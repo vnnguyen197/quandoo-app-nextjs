@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { dataHeader } from "constant";
 
-export interface HeaderProps {}
+export interface HeaderProps {
+}
 
 export default function Header(props: HeaderProps) {
   return (
@@ -25,10 +26,9 @@ export default function Header(props: HeaderProps) {
             <div className={style.items4}>
               <FontAwesomeIcon className={style.icons} icon={faCircleUser} size="lg" fixedWidth />
             </div>
-            <div className={style.items3}>
-              {item.sub_title4}
+            <div className={style.items3}> {item.sub_title4}
               <FontAwesomeIcon className={style.icon}  icon={faAngleDown} size="lg" fixedWidth />
-              </div>
+            </div>
           </div>
         </div>
       ))}

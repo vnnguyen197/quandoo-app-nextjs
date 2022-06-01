@@ -1,15 +1,15 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Layouts from '@/components/layouts';
+import Layout from '@/components/Layout'
+import SildeFind from './SlideFind/component'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <>
-    <Layouts>
+    <Layout>
        <Component {...pageProps} />
-    </Layouts>
-    </>
-  );
-};
+       <SildeFind/>
+    </Layout>
+  )
+}
 
 export default MyApp
