@@ -1,12 +1,17 @@
 import * as React from "react";
 import style from "./style.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram,faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import googlePlay from "../../public/images/googleplay.svg";
 import appStore from "../../public/images/appstore.svg";
 import imgfooter from "../../public/images/imgfooter.png.jpg";
 import { dataFooter } from "constant";
+// import { Button, Card, Collapse } from "reactstrap";
 // import Uc from "../../public/images/australia.png";
 // import zealand from "../../public/images/new-zealand.png";
 // import austria from "../../public/images/austria.png";
@@ -21,10 +26,7 @@ import { dataFooter } from "constant";
 // import singapore from "../../public/images/singapore.png";
 // import hongkong from "../../public/images/hong-kong.png";
 
-export interface FooterProps {
-  title: string;
-  sub_title1: string;
-}
+export interface FooterProps {}
 
 export default function Footer(props: FooterProps) {
   return (
@@ -35,38 +37,51 @@ export default function Footer(props: FooterProps) {
             <h3>{item.title}</h3>
             <div className={style.item}>{item.sub_title1}</div>
             <div className={style.item}>{item.sub_title2}</div>
-            <div className={style.item}>{item.sub_title3}</div>
-            <div className={style.item}>{item.sub_title4}</div>
-            <div className={style.item}>{item.sub_title5}</div>
-            <div className={style.item}>{item.sub_title6}</div>
-            <div className={style.item}>{item.sub_title7}</div>
-            <div className={style.item}>{item.sub_title8}</div>
-            <div className={style.item}>{item.sub_title9}</div>
-            <div className={style.item}>{item.sub_title10}</div>
-            <div className={style.item}>{item.sub_title11}</div>
-            <div className={style.item}>{item.sub_title12}</div>
-            <div className={style.item}>{item.sub_title13}</div> 
+            <div className={style.item}>{item?.sub_title3}</div>
+            <div className={style.item}>{item?.sub_title4}</div>
+            <div className={style.item}>{item?.sub_title5}</div>
+            <div className={style.item}>{item?.sub_title6}</div>
+            <div className={style.item}>{item?.sub_title7}</div>
+            <div className={style.item}>{item?.sub_title8}</div>
+            <div className={style.item}>{item?.sub_title9}</div>
+            <div className={style.item}>{item?.sub_title10}</div>
+            <div className={style.item}>{item?.sub_title11}</div>
+            <div className={style.item}>{item?.sub_title12}</div>
+            <div className={style.item}>{item?.sub_title13}</div>
           </div>
         ))}
         <div className={style.footerSocial}>
           <h3 className={style.h3}>SOCIAL</h3>
-            <FontAwesomeIcon icon={faFacebook} className={style.icons1} />
-            <FontAwesomeIcon icon={faTwitter} className={style.icons} />
-            <FontAwesomeIcon icon={faInstagram} className={style.icons} />
+          <FontAwesomeIcon icon={faFacebook} className={style.icons1} />
+          <FontAwesomeIcon icon={faTwitter} className={style.icons} />
+          <FontAwesomeIcon icon={faInstagram} className={style.icons} />
         </div>
         <div className={style.footerApps}>
           <h3 className={style.h3}>APPS</h3>
           <div className={style.images}>
             <div className={style.imagesItem}>
-              <Image src={googlePlay} width={136} height={40} alt="google play" />
+              <Image
+                src={googlePlay}
+                width={136}
+                height={40}
+                alt="google play"
+              />
             </div>
-              <Image src={appStore} width={136} height={40} alt="app store" />
+            <Image src={appStore} width={136} height={40} alt="app store" />
           </div>
         </div>
       </div>
       <div className={style.footerBottom}>
-          <Image src={imgfooter} width={200} height={40} alt="images footer" />
-        <div className={style.offcialApps}> ©2022 Quandoo GmbH. All rights reserved </div>
+        <Image
+          className={style.imagesBottom}
+          src={imgfooter}
+          width={200}
+          height={40}
+          alt="images footer"
+        />
+        <div className={style.offcialApps}>
+          ©2022 Quandoo GmbH. All rights reserved
+        </div>
       </div>
     </footer>
   );

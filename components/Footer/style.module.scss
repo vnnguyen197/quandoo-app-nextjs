@@ -1,63 +1,94 @@
-.footer{
-    background-color: #232833;
-    color: #ffffff;
-    .footerMain{
+.footer {
+  background-color: #232833;
+  color: #ffffff;
+  .footerMain {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 180px;
+    .footerItem {
+      .item {
+        color: #ffffffcc;
+        padding: 8px 0;
+      }
+    }
+    .footerSocial {
+      .icons1 {
+        width: 25px;
+        height: 25px;
+      }
+      .icons {
+        margin-left: 20px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .footerApps {
+      .images {
         display: flex;
-        justify-content: space-around;
-        padding-top: 180px;
-        .footerItem{
-            .item{
-                color: #ffffffcc;
-                padding: 8px 0;
-            }
+        flex-direction: column;
+        margin-bottom: 30px;
+        .imagesItem {
+          margin-bottom: 20px;
         }
-    .footerSocial{
-        .icons1{
-            width: 25px;
-            height: 25px;
-        }
-        .icons{
-            margin-left: 20px;
-            width: 25px;
-            height: 25px;
-        }
+      }
     }
-    .footerApps{   
-        .images{
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 30px;
-            .imagesItem{
-                margin-bottom: 20px;
-            }
-        }
-    }
-}
+  }
 
-    .footerBottom{
-        padding-bottom: 40px;
-        padding-left: 58px;
-        .offcialApps{
-            margin-left: 15px;
-            color: #ffffffcc;
-        }
+  .footerBottom {
+    padding-bottom: 40px;
+    padding-left: 58px;
+    .offcialApps {
+      margin-left: 15px;
+      color: #ffffffcc;
     }
+  }
 }
 
 // apply to tablet
 @media only screen and (max-width: 1025px) {
-        .footerMain{
-            flex-wrap: wrap !important;
+  .footerMain {
+    flex-wrap: wrap !important;
+    .footerApps {
+      .images {
+        display: flex;
+        flex-direction: row !important;
+        margin-top: 20px;
+        align-items: flex-start;
+        .imagesItem {
+          padding-right: 10px !important;
         }
+      }
+    }
+    .footerSocial {
+      .icons1 {
+        width: 40px !important;
+        height: 40px !important;
+        margin-top: 40px !important;
+      }
+      .icons {
+        margin-left: 40px !important;
+        margin-top: 40px !important;
+        width: 40px !important;
+        height: 40px !important;
+      }
+    }
+  }
+  .footerBottom {
+    padding-left: 0 !important;
+    .imagesBottom {
+      width: 100px !important;
+      height: 10px !important;
+    }
+  }
 }
 
 // apply to mobile
 @media only screen and (max-width: 600px) {
-            .footerMain{
-                margin-left: 20px;
-                flex-direction: column !important;
-                .h3{
-                    display: none;
-        }
-    }           
+  .footerMain {
+    margin-left: 20px;
+    flex-direction: column !important;
+    .h3 {
+      display: none;
+    }
+  }
 }
