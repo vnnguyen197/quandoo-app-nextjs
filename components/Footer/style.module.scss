@@ -6,10 +6,10 @@
     justify-content: space-around;
     padding-top: 110px;
     .footerItem {
-      .mobile{
+      .mobile {
         display: none;
       }
-      .desktop{
+      .desktop {
         .item {
           color: #ffffffcc;
           padding: 8px 0;
@@ -32,8 +32,8 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
-        .googlePlay{
-          padding-bottom: 20px ;
+        .googlePlay {
+          padding-bottom: 20px;
         }
       }
     }
@@ -47,19 +47,18 @@
     }
   }
 }
-
 // apply to tablet
 @media (min-width: 768px) and (max-width: 1024px) {
   .footerMain {
     flex-wrap: wrap;
     justify-content: space-between !important;
     padding-top: 120px !important;
-    padding-left: 40px ;
+    padding-left: 40px;
     .footerItem {
       width: 43%;
       margin-right: 10px !important;
     }
-    .footerSocial{
+    .footerSocial {
       padding-right: 64px;
       width: 44%;
     }
@@ -69,7 +68,7 @@
     .offcialApps {
       font-size: 0.9em;
     }
-  } 
+  }
   .footerApps {
     .images {
       display: flex;
@@ -78,47 +77,45 @@
     }
   }
 }
-
 // apply to mobile
-@media (min-width: 320px) and (max-width: 480px) {
-  .footer{
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer {
     .footerMain {
       flex-direction: column !important;
       padding-top: 50px;
       margin-left: 20px;
-      .footerItem{
-        .desktop{
+      .footerItem {
+        .desktop {
           display: none;
         }
-        .mobile{
+        .mobile {
           display: block;
-        .collapseMobile{
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          font-size: 14px;
-          .collapseIcon{
-            font-size: 12px !important;
-            padding-right: 20px !important;
-            .icon{
-              font-size: 12px !important;
-              padding-right: 20px !important;
+          .collapseMobile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            .collapseIcon {
+              .icon{
+                font-size: 12px !important;
+                padding-right: 20px !important;
+                height: 20px;
+              }
             }
-         }
-        }
-        .collapseItemMobile{
-          display: block;
-          .item {
-            color: #ffffffcc;
-            padding: 8px 0;
+          }
+          .collapseItemMobile {
+            display: block;
+            .item {
+              color: #ffffffcc;
+              padding: 8px 0;
+            }
           }
         }
       }
-    }
-      .h3{
+      .h3 {
         display: none;
       }
-      .footerSocial{
+      .footerSocial {
         padding: 30px 0 !important;
         .icons1 {
           height: 50px !important;
@@ -130,16 +127,16 @@
           width: 35px !important;
         }
       }
-      .footerApps{
-        .images{
+      .footerApps {
+        .images {
           flex-direction: row;
           align-items: baseline;
-          .googlePlay{
+          .googlePlay {
             padding-right: 10px;
           }
         }
       }
-    }    
+    }
     .footerBottom {
       width: 150px !important;
       padding-left: 10px !important;
