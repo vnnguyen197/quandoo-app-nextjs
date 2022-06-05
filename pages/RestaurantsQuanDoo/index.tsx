@@ -9,7 +9,7 @@ export interface IRestaurantsProps {
 export default function Restaurants (props: IRestaurantsProps) {
   return (
     <div>
-          <SildeFind/>
+          <SildeFind/> 
           <RestaurantGuide/>
     </div>
   );

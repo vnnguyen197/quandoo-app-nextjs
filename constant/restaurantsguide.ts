@@ -1,5 +1,6 @@
 export const restaurantsguide = {
-  title_main: "Explore our to Singapore",
+  title_main1: "Explore our",
+  title_main2: "to Singapore",
   title_span: "restaurant guide",
   tilte_child: "Find your new local restaurants",
   content: "Get cosy and comfortable at some of Singapore's most-loved restaurants",

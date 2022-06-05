@@ -37,7 +37,6 @@ export default function Footer(props: FooterProps) {
                 ))}
               </div>
             </div>
-
             <div className={style.mobile}>
                <div className={style.collapseMobile} {...getToggleProps()}>
                   <h3 className={style.h3Mobile}>{item.title}</h3>
@@ -61,7 +60,6 @@ export default function Footer(props: FooterProps) {
                 </div>
               </div> 
             </div>
-
           </div>
         ))}
 
