@@ -21,82 +21,71 @@ export default function Footer(props: FooterProps) {
 
   return (
     <footer className={style.footer}>
-      <div className={style.footerMain}>
+      <div className={style.footer_main}>
         {dataFooter.map((item, index) => (
-          <div className={style.footerItem} key={index}>
-
-            <div className={style.desktop}>
+          <div className={style.footer_main__item} key={index}>
+            <div className={style["footer_main__item--desktop"]}>
               <h3>{item.title}</h3>
-              <div>
+              <>
                 {item.sub_title.map((sub_title, index) =>(
                     <div key={index}>
-                        <div className={style.item}>
+                        <div className={style["footer_main__item--desktop--item"]}>
                           {sub_title}
                         </div>
                     </div>
                 ))}
-              </div>
+              </>
             </div>
-
-            <div className={style.mobile}>
-               <div className={style.collapseMobile} {...getToggleProps()}>
-                  <h3 className={style.h3Mobile}>{item.title}</h3>
-                  <div className={style.collapseIcon}>
+            <div className={style["footer_main__item--mobile"]}>
+               <div className={style["footer_main__item--mobile--collapse"]} {...getToggleProps()}>
+                  <h3 className={style["footer_main__item--mobile--collapse--h3"]}>{item.title}</h3>
+                  <div className={style["footer_main__item--mobile--collapse-icon"]}>
                     {isExpanded ? (
-                      <FontAwesomeIcon className={style.icon} icon={faAngleUp} size="lg" fixedWidth />
+                      <FontAwesomeIcon className={style["footer_main__item--mobile--collapse--1"]} icon={faAngleUp} size="lg" fixedWidth />
                             ) : (
-                      <FontAwesomeIcon className={style.icon} icon={faAngleDown} size="lg" fixedWidth />
+                      <FontAwesomeIcon className={style["footer_main__item--mobile--collapse--1"]} icon={faAngleDown} size="lg" fixedWidth />
                     )}
                   </div>
                 </div>
-              <div className={style.collapseItemMobile} {...getCollapseProps()}>
-                <div>
-                {item.sub_title.map((sub_title, index) =>(
-                    <div key={index}>
-                        <div className={style.item}>
+                <div className={style["footer_main__item--mobile--subtitle"]} {...getCollapseProps()}>
+                  <>
+                    {item.sub_title.map((sub_title, index) =>(
+                      <div key={index}>
+                        <div className={style["footer_main__item--mobile--subtitle--item"]}>
                           {sub_title}
                         </div>
-                    </div>
-                ))}
-                </div>
-              </div> 
+                      </div>
+                      ))}
+                  </>
+                </div> 
             </div>
-
           </div>
         ))}
-
-        <div className={style.footerSocial}>
-          <h3 className={style.h3}>SOCIAL</h3>
-          <FontAwesomeIcon icon={faFacebook} className={style.icons1} />
-          <FontAwesomeIcon icon={faTwitter} className={style.icons} />
-          <FontAwesomeIcon icon={faInstagram} className={style.icons} />
+        <div className={style.footer_main__social}>
+          <h3 className={style["footer_main__social--h3"]}>SOCIAL</h3>
+          <FontAwesomeIcon icon={faFacebook} className={style["footer_main__social--1"]} />
+          <FontAwesomeIcon icon={faTwitter} className={style["footer_main__social--2"]} />
+          <FontAwesomeIcon icon={faInstagram} className={style["footer_main__social--2"]} />
         </div>
-
-        <div className={style.footerApps}>
-          <h3 className={style.h3}>APPS</h3>
-          <div className={style.images}>
-              <div className={style.googlePlay}>
+        <div className={style.footer_main__apps}>
+          <h3 className={style["footer_main__apps--h3"]}>APPS</h3>
+          <div className={style["footer_main__apps--icons"]}>
+              <div className={style["footer_main__apps--icons--googleplay"]}>
                 <Image src={googlePlay} width={136} height={40} alt="google play" />
               </div>
-              <div className={style.appStore}>
+              <div className={style["footer_main__social-images-appstore"]}>
                 <Image src={appStore} width={136} height={40} alt="app store" />
               </div>
           </div>
         </div>
       </div>
-
-      <div className={style.footerBottom}>
-        <Image
-          className={style.imagesBottom}
-          src={imgfooter}
-          width={200}
-          height={40}
-          alt="images footer"
-        />
-        <div className={style.offcialApps}>
+      <div className={style.footer_bottom}>
+        <Image className={style["footer_bottom--image"]} src={imgfooter} width={200} height={40} alt="images footer"/>
+        <div className={style.footer_bottom__intro}>
           ©2022 Quandoo GmbH. All rights reserved
         </div>
       </div>
     </footer>
   );
 }
+

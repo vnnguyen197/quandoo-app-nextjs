@@ -1,47 +1,47 @@
 .footer {
   background-color: #232833;
   color: #ffffff;
-  .footerMain {
+  &_main {
     display: flex;
     justify-content: space-around;
     padding-top: 110px;
-    .footerItem {
-      .mobile{
+    &__item {
+      &--mobile{
         display: none;
       }
-      .desktop{
-        .item {
+      &--desktop{
+        &--item {
           color: #ffffffcc;
           padding: 8px 0;
         }
       }
     }
-    .footerSocial {
-      .icons1 {
+    &__social {
+      &--1 {
         width: 25px;
         height: 25px;
       }
-      .icons {
+      &--2 {
         margin-left: 20px;
         width: 25px;
         height: 25px;
       }
     }
-    .footerApps {
-      .images {
+    &__apps {
+      &--icons{
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
-        .googlePlay{
+        &--googleplay{
           padding-bottom: 20px ;
         }
       }
     }
   }
-  .footerBottom {
+  &_bottom {
     padding-bottom: 40px;
     padding-left: 58px;
-    .offcialApps {
+    &__intro {
       margin-left: 15px;
       color: #ffffffcc;
     }
@@ -49,96 +49,101 @@
 }
 
 // apply to tablet
-@media (min-width: 768px) and (max-width: 1024px) {
-  .footerMain {
-    flex-wrap: wrap;
-    justify-content: space-between !important;
-    padding-top: 120px !important;
-    padding-left: 40px ;
-    .footerItem {
-      width: 43%;
-      margin-right: 10px !important;
+@media (min-width: 480px) and (max-width: 1024px) {
+  .footer{
+    &_main {
+      flex-wrap: wrap;
+      justify-content: space-between !important;
+      padding-top: 120px !important;
+      padding-left: 40px ;
+      &__item {
+        width: 43%;
+        margin-right: 10px !important;
+      }
+      &__social{
+        padding-right: 64px;
+        width: 44%;
+      }
+      &__apps {
+        &--icons {
+          display: flex;
+          flex-direction: row !important;
+          margin-bottom: 50px !important;
+        }
+      }
     }
-    .footerSocial{
-      padding-right: 64px;
-      width: 44%;
-    }
-  }
-  .footerBottom {
+  &_bottom {
     padding-left: 25px !important;
-    .offcialApps {
+    &__intro {
       font-size: 0.9em;
-    }
-  } 
-  .footerApps {
-    .images {
-      display: flex;
-      flex-direction: row !important;
-      margin-bottom: 50px !important;
-    }
+      }
+    } 
   }
 }
 // apply to mobile
 @media (min-width: 320px) and (max-width: 480px) {
   .footer{
-    .footerMain {
+    &_main {
       flex-direction: column !important;
       padding-top: 50px;
       margin-left: 20px;
-      .footerItem{
-        .desktop{
+      &__item{
+        &--desktop{
           display: none;
         }
-        .mobile{
+        &--mobile{
           display: block;
-        .collapseMobile{
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          font-size: 14px;
-          .collapseIcon{
-            font-size: 12px;
-            padding-right: 20px;
+          &--collapse{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            &--1{
+              font-size: 12px;
+              padding-right: 20px;
          }
         }
-        .collapseItemMobile{
-          display: block;
-          .item {
-            color: #ffffffcc;
-            padding: 8px 0;
+          &--subtitle{
+            display: block;
+            &--item {
+              color: #ffffffcc;
+              padding: 8px 0;
           }
         }
       }
     }
-      .h3{
-        display: none;
-      }
-      .footerSocial{
+      &__social {
         padding: 30px 0 !important;
-        .icons1 {
+        &--h3{
+          display: none;
+        }
+        &--1 {
           height: 50px !important;
           width: 35px !important;
         }
-        .icons {
+        &--2 {
           margin-left: 30px;
           height: 50px !important;
           width: 35px !important;
         }
       }
-      .footerApps{
-        .images{
+      &__apps{
+        &--h3{
+          display: none;
+        }
+        &--icons{
           flex-direction: row;
           align-items: baseline;
-          .googlePlay{
+          &--googleplay{
             padding-right: 10px;
           }
         }
       }
     }    
-    .footerBottom {
+    &_bottom {
       width: 150px !important;
       padding-left: 10px !important;
-      .offcialApps {
+      &__intro {
         font-size: 11px !important;
         color: #ffffffcc !important;
         width: 300px;
