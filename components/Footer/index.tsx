@@ -63,9 +63,9 @@ export default function Footer(props: FooterProps) {
         ))}
         <div className={style.footer_main__social}>
           <h3 className={style["footer_main__social--h3"]}>SOCIAL</h3>
-          <FontAwesomeIcon icon={faFacebook} className={style["footer_main__social--1"]} />
-          <FontAwesomeIcon icon={faTwitter} className={style["footer_main__social--2"]} />
-          <FontAwesomeIcon icon={faInstagram} className={style["footer_main__social--2"]} />
+          <FontAwesomeIcon className={style["footer_main__social--1"]} icon={faFacebook}/>
+          <FontAwesomeIcon className={style["footer_main__social--2"]} icon={faTwitter} />
+          <FontAwesomeIcon className={style["footer_main__social--2"]} icon={faInstagram} />
         </div>
         <div className={style.footer_main__apps}>
           <h3 className={style["footer_main__apps--h3"]}>APPS</h3>

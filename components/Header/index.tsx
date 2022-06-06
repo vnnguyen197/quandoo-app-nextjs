@@ -18,11 +18,9 @@ export default function Header(props: HeaderProps) {
             <Image src={logo} width={180} height={40} alt="logo" />
           </div>
           <div className={style.header_main__right}>
-            <div className={style["header_main__right--1"]}>{item.sub_title1}</div>
-            <div className={style["header_main__right--2"]}>
-              <div>{item.sub_title2}</div>
-            </div>
-            <div className={style["header_main__right--2"]}>{item.sub_title3}</div>
+            <div className={style["header_main__right--1"]}> {item.sub_title1} </div>
+            <div className={style["header_main__right--2"]}> {item.sub_title2} </div>
+            <div className={style["header_main__right--2"]}> {item.sub_title3} </div>
             <div className={style["header_main__right--3"]}> {item.sub_title4}
               <FontAwesomeIcon className={style["header_main__right--3--icon"]} icon={faAngleDown} size="lg" fixedWidth />
             </div>
