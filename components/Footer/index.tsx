@@ -13,75 +13,54 @@ import imgfooter from "../../public/images/imgfooter.png.jpg";
 import { dataFooter } from "constant";
 import useCollapse from "react-collapsed";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import FooterMobile from "./components";
 
 export interface FooterProps {}
 
-export default function Footer(props: FooterProps) {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-
+function Footer(props: FooterProps) {
   return (
     <footer className={style.footer}>
-      <div className={style.footer_main}>
+      <div className={style.footer__main}>
         {dataFooter.map((item, index) => (
-          <div className={style.footer_main__item} key={index}>
-            <div className={style["footer_main__item--desktop"]}>
-              <h3>{item.title}</h3>
+          <div className={style.footer__item} key={index}>
+            <div className={style["footer__item--des"]}>
+              <h3 className={style["footer__item--des--h3"]}>{item.title}</h3>
               <>
                 {item.sub_title.map((sub_title, index) =>(
                     <div key={index}>
-                        <div className={style["footer_main__item--desktop--item"]}>
+                        <div className={style["footer__item--des--title"]}>
                           {sub_title}
                         </div>
                     </div>
                 ))}
               </>
             </div>
-            <div className={style["footer_main__item--mobile"]}>
-               <div className={style["footer_main__item--mobile--collapse"]} {...getToggleProps()}>
-                  <h3 className={style["footer_main__item--mobile--collapse--h3"]}>{item.title}</h3>
-                  <div className={style["footer_main__item--mobile--collapse-icon"]}>
-                    {isExpanded ? (
-                      <FontAwesomeIcon className={style["footer_main__item--mobile--collapse--1"]} icon={faAngleUp} size="lg" fixedWidth />
-                            ) : (
-                      <FontAwesomeIcon className={style["footer_main__item--mobile--collapse--1"]} icon={faAngleDown} size="lg" fixedWidth />
-                    )}
-                  </div>
-                </div>
-                <div className={style["footer_main__item--mobile--subtitle"]} {...getCollapseProps()}>
-                  <>
-                    {item.sub_title.map((sub_title, index) =>(
-                      <div key={index}>
-                        <div className={style["footer_main__item--mobile--subtitle--item"]}>
-                          {sub_title}
-                        </div>
-                      </div>
-                      ))}
-                  </>
-                </div> 
-            </div>
-          </div>
+            </div> 
         ))}
-        <div className={style.footer_main__social}>
-          <h3 className={style["footer_main__social--h3"]}>SOCIAL</h3>
-          <FontAwesomeIcon className={style["footer_main__social--1"]} icon={faFacebook}/>
-          <FontAwesomeIcon className={style["footer_main__social--2"]} icon={faTwitter} />
-          <FontAwesomeIcon className={style["footer_main__social--2"]} icon={faInstagram} />
+          <div className={style["footer__item--mobile"]}>
+               <FooterMobile/>
+          </div>
+        <div className={style.footer__social}>
+          <h3 className={style["footer__social--h3"]}>SOCIAL</h3>
+          <FontAwesomeIcon className={style["footer__social--item1"]} icon={faFacebook}/>
+          <FontAwesomeIcon className={style["footer__social--item2"]} icon={faTwitter} />
+          <FontAwesomeIcon className={style["footer__social--item2"]} icon={faInstagram} />
         </div>
-        <div className={style.footer_main__apps}>
-          <h3 className={style["footer_main__apps--h3"]}>APPS</h3>
-          <div className={style["footer_main__apps--icons"]}>
-              <div className={style["footer_main__apps--icons--googleplay"]}>
+        <div className={style.footer__apps}>
+          <h3 className={style["footer__apps--h3"]}>APPS</h3>
+          <div className={style["footer__apps--icons"]}>
+              <div className={style.footer__googleplay}>
                 <Image src={googlePlay} width={136} height={40} alt="google play" />
               </div>
-              <div className={style["footer_main__social-images-appstore"]}>
+              <div className={style.footer__appstore}>
                 <Image src={appStore} width={136} height={40} alt="app store" />
               </div>
           </div>
         </div>
       </div>
-      <div className={style.footer_bottom}>
-        <Image className={style["footer_bottom--image"]} src={imgfooter} width={200} height={40} alt="images footer"/>
-        <div className={style.footer_bottom__intro}>
+      <div className={style.footer__bottom}>
+        <Image className={style["footer__bottom--image"]} src={imgfooter} width={200} height={40} alt="images footer"/>
+        <div className={style.footer__intro}>
           ©2022 Quandoo GmbH. All rights reserved
         </div>
       </div>
@@ -89,3 +68,4 @@ export default function Footer(props: FooterProps) {
   );
 }
 
+export default Footer;

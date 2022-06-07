@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Layouts from 'Layouts';
-import SildeFind from '@/components/SlideFind';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

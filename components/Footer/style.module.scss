@@ -1,158 +1,170 @@
 .footer {
   background-color: #232833;
   color: #ffffff;
-  &_main {
+  &__main {
     display: flex;
     justify-content: space-around;
     padding-top: 110px;
-    &__item {
-      &--mobile{
-        display: none;
-      }
-      &--desktop{
-        &--item {
-          color: #ffffffcc;
-          padding: 8px 0;
-          font-size: 16px !important;
-        }
-      }
+  }
+  &__item {
+    &--mobile {
+      display: none;
     }
-    &__social {
-      &--1 {
-        width: 25px;
-        height: 25px;
+    &--des {
+      &--title {
+        color: #ffffffcc;
+        padding: 8px 0;
+        font-size: 16px !important;
       }
-      &--2 {
-        margin-left: 20px;
-        width: 25px;
-        height: 25px;
-      }
-    }
-    &__apps {
-      &--icons{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-        &--googleplay{
-          padding-bottom: 20px ;
-        }
+      &--h3{
+        font-size: 17px ;
+        font-weight: bold;
       }
     }
   }
-  &_bottom {
-    padding-bottom: 40px;
-    padding-left: 58px;
-    &__intro {
-      margin-left: 15px;
-      color: #ffffffcc;
+  &__social {
+    &--h3{
+      font-size: 17px ;
+      font-weight: bold;
     }
+    &--item1 {
+      width: 25px;
+      height: 25px;
+    }
+    &--item2 {
+      margin-left: 20px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__apps--icons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  &__apps--h3{
+    font-size: 17px ;
+    font-weight: bold;
+  }
+  &__googleplay {
+    padding-bottom: 20px;
+  }
+
+  &__bottom {
+    padding: 0 0 40px 58px;
+  }
+  &__intro {
+    margin-left: 15px;
+    color: #ffffffcc;
   }
 }
 
 // apply to tablet
 @media (min-width: 480px) and (max-width: 1024px) {
-  .footer{
-    &_main {
-      flex-wrap: wrap;
-      justify-content: space-between !important;
-      padding-top: 120px !important;
-      padding-left: 40px ;
-      &__item {
-        width: 43%;
-        margin-right: 10px !important;
-        font-size: 20px !important;
-      }
-      &__social{
-        padding-right: 64px;
-        width: 44%;
-      }
-      &__apps {
-        &--icons {
-          display: flex;
-          flex-direction: row !important;
-          margin-bottom: 50px !important;
-        }
-      }
+  .footer__main {
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+    padding-top: 120px !important;
+    padding-left: 40px;
+  }
+  .footer__item {
+    width: 43%;
+    margin-right: 10px !important;
+    font-size: 20px !important;
+  }
+  .footer__social {
+    padding-right: 64px;
+    width: 44%;
+  }
+  .footer__apps {
+    &--icons {
+      display: flex;
+      flex-direction: row !important;
+      margin-bottom: 50px !important;
     }
-  &_bottom {
+  }
+  .footer__bottom {
     padding-left: 25px !important;
-    &__intro {
-      font-size: 1em;
-      }
-    } 
+  }
+  .footer__intro {
+    font-size: 16px !important;
   }
 }
 
 // apply to mobile
 @media (min-width: 320px) and (max-width: 480px) {
-  .footer{
-    &_main {
-      flex-direction: column !important;
-      padding-top: 50px;
-      margin-left: 20px;
-      &__item{
-        &--desktop{
-          display: none;
+  .footer__main {
+    flex-direction: column !important;
+    padding-top: 50px;
+    margin-left: 20px;
+  }
+  .footer__item {
+    &--des {
+      display: none !important;
+    }
+    &--mobile {
+      display: block;
+      &--collapse {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        &--h3{
+          font-size: 18px;
+          padding: 10px 0;
         }
-        &--mobile{
-          display: block;
-          &--collapse{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 14px;
-            &--1{
-              padding-right: 20px;
-              height: 20px;
-         }
-        }
-          &--subtitle{
-            display: block;
-            &--item {
-              color: #ffffffcc;
-              padding: 8px 0;
-              font-size: 16px !important;
-          }
+        &--icons--item {
+          padding-right: 20px !important;
+          height: 20px !important;
         }
       }
     }
-      &__social {
-        padding: 30px 0 !important;
-        &--h3{
-          display: none;
-        }
-        &--1 {
-          height: 50px !important;
-          width: 35px !important;
-        }
-        &--2 {
-          margin-left: 30px;
-          height: 50px !important;
-          width: 35px !important;
-        }
-      }
-      &__apps{
-        &--h3{
-          display: none;
-        }
-        &--icons{
-          flex-direction: row;
-          align-items: baseline;
-          &--googleplay{
-            padding-right: 10px;
-          }
-        }
-      }
-    }    
-    &_bottom {
-      width: 150px !important;
-      padding-left: 10px !important;
-      &__intro {
-        font-size: 13px !important;
-        color: #ffffffcc !important;
-        width: 300px;
-        margin-top: 20px !important;
-      }
+  }
+
+  .footer__subtitle {
+    display: block;
+    &--item {
+      color: #ffffffcc;
+      padding: 8px 0;
+      font-size: 16px !important;
     }
+  }
+
+  .footer__social {
+    padding: 30px 0 !important;
+    &--h3 {
+      display: none;
+    }
+    &--item1 {
+      height: 50px !important;
+      width: 35px !important;
+    }
+    &--item2 {
+      margin-left: 30px;
+      height: 50px !important;
+      width: 35px !important;
+    }
+  }
+  .footer__apps {
+    &--h3 {
+      display: none;
+    }
+    &--icons {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+  .footer__googleplay {
+    padding-right: 10px;
+  }
+  .footer_bottom {
+    width: 150px !important;
+    padding-left: 10px !important;
+  }
+  .footer__intro {
+    font-size: 13px !important;
+    color: #ffffffcc !important;
+    width: 300px;
+    margin-top: 20px !important;
   }
 }

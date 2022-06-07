@@ -1,22 +1,126 @@
-import Image from "next/image";
-import * as React from "react";
-import style from "./style.module.scss"
-
-export interface SildeFindProps {}
-
-export default function SildeFind(props: SildeFindProps) {
-  return (
-    <div className={style.slide}>
-      <div className={style.slideMain}>
-        <div className={style.b}>
-        <h1> It is time to treat yourseft</h1>
-        <h2> Let is book you a table - the Quandoo way. </h2>
-        <input type="text" placeholder="Find retaurants or cuisines" />
-        <input type="text" placeholder="Singapore" />
+import React from 'react';
+import useCollapse from 'react-collapsed';
+function Section(props: any) {
+    const config = {
+        defaultExpanded: props.defaultExpanded || false,
+        collapsedHeight: props.collapsedHeight || 0
+    };
+    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
+return (
+    <div className="collapsible">
+        <div className="header" {...getToggleProps()}>
+            <div className="title">{props.title}</div>
+            <div className="icon">
+                <i className={'fas fa-chevron-circle-' + (isExpanded ? 'up' : 'down')}></i>
+            </div>
         </div>
-        <button> Find </button>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam impedit officiis iste dolorem maxime perspiciatis quisquam nisi voluptatibus sint quos quasi debitis tenetur autem perferendis, nemo beatae tempore incidunt culpa.</h1>
-      </div>
+        <div {...getCollapseProps()}>
+            <div className="content">
+                {props.children}
+            </div>
+        </div>
     </div>
-  );
+    );
 }
+function App() {
+    return (
+        <div className="preferences">
+             <Section title="General" defaultExpanded="true">
+                <label>
+                    <input type="checkbox"/> Use dark theme
+                </label>
+                <label>
+                    <input type="checkbox"/> Use internet connection to download resources
+                </label>
+                <br/><br/>
+            </Section>
+             <Section title="Application Startup">
+                <label>
+                    <input type="checkbox"/> Open the application when you log into the computer
+                </label>
+                <br/><br/><br/><br/>
+            </Section>
+            <Section title="Notifications" collapsedHeight="32">
+                <i>Now you can get notifications to your smart watch!&nbsp;
+                    <a href="#">Learn more</a>
+                </i>
+                <br/><br/>
+                <label>
+                    <input type="checkbox"/> Notify me task statuses via SMS
+                </label>
+                <br/><br/>
+            </Section>
+            <Section title="Notifications" collapsedHeight="32">
+                <i>Now you can get notifications to your smart watch!&nbsp;
+                    <a href="#">Learn more</a>
+                </i>
+                <br/><br/>
+                <label>
+                    <input type="checkbox"/> Notify me task statuses via SMS
+                </label>
+                <br/><br/>
+            </Section>
+            <Section title="Notifications" collapsedHeight="32">
+                <i>Now you can get notifications to your smart watch!&nbsp;
+                    <a href="#">Learn more</a>
+                </i>
+                <br/><br/>
+                <label>
+                    <input type="checkbox"/> Notify me task statuses via SMS
+                </label>
+                <br/><br/>
+            </Section>
+            <Section title="Notifications" collapsedHeight="32">
+                <i>Now you can get notifications to your smart watch!&nbsp;
+                    <a href="#">Learn more</a>
+                </i>
+                <br/><br/>
+                <label>
+                    <input type="checkbox"/> Notify me task statuses via SMS
+                </label>
+                <br/><br/>
+            </Section>
+            <Section title="Notifications" collapsedHeight="32">
+                <i>Now you can get notifications to your smart watch!&nbsp;
+                    <a href="#">Learn more</a>
+                </i>
+                <br/><br/>
+                <label>
+                    <input type="checkbox"/> Notify me task statuses via SMS
+                </label>
+                <br/><br/>
+            </Section>
+            <Section title="Notifications" collapsedHeight="32">
+                <i>Now you can get notifications to your smart watch!&nbsp;
+                    <a href="#">Learn more</a>
+                </i>
+                <br/><br/>
+                <label>
+                    <input type="checkbox"/> Notify me task statuses via SMS
+                </label>
+                <br/><br/>
+            </Section>
+            <Section title="Notifications" collapsedHeight="32">
+                <i>Now you can get notifications to your smart watch!&nbsp;
+                    <a href="#">Learn more</a>
+                </i>
+                <br/><br/>
+                <label>
+                    <input type="checkbox"/> Notify me task statuses via SMS
+                </label>
+                <br/><br/>
+            </Section>
+            <Section title="Notifications" collapsedHeight="32">
+                <i>Now you can get notifications to your smart watch!&nbsp;
+                    <a href="#">Learn more</a>
+                </i>
+                <br/><br/>
+                <label>
+                    <input type="checkbox"/> Notify me task statuses via SMS
+                </label>
+                <br/><br/>
+            </Section>
+       </div>
+    );
+}
+export default App;
