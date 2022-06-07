@@ -1,6 +1,6 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import * as React from "react";
-import Footer from "../Footer";
-import Header from "../Header";
 
 export interface LayoutProps {
   children: any;

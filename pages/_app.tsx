@@ -1,9 +1,8 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Layout from '@/components/Layout'
-import Restaurants from './RestaurantsQuanDoo'
 import { useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
+import Layouts from 'Layouts';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
  
@@ -12,10 +11,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
  }, []);
  
   return (
-    <Layout>
+    <Layouts>
         <Component {...pageProps} />
-        <Restaurants/>
-    </Layout>
+    </Layouts>
   )
 }
 
