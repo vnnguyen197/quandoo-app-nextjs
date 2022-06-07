@@ -1,2 +1,5 @@
 export * from "./dataHeader" 
 export * from "./dataFooter" 
+export * from "./legal"
+export * from "./about"
+export * from "./countries"
