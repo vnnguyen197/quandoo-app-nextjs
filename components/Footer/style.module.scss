@@ -13,6 +13,7 @@
         &--item {
           color: #ffffffcc;
           padding: 8px 0;
+          font-size: 16px !important;
         }
       }
     }
@@ -59,6 +60,7 @@
       &__item {
         width: 43%;
         margin-right: 10px !important;
+        font-size: 20px !important;
       }
       &__social{
         padding-right: 64px;
@@ -75,11 +77,12 @@
   &_bottom {
     padding-left: 25px !important;
     &__intro {
-      font-size: 0.9em;
+      font-size: 1em;
       }
     } 
   }
 }
+
 // apply to mobile
 @media (min-width: 320px) and (max-width: 480px) {
   .footer{
@@ -99,8 +102,8 @@
             justify-content: space-between;
             font-size: 14px;
             &--1{
-              font-size: 12px;
               padding-right: 20px;
+              height: 20px;
          }
         }
           &--subtitle{
@@ -108,6 +111,7 @@
             &--item {
               color: #ffffffcc;
               padding: 8px 0;
+              font-size: 16px !important;
           }
         }
       }
@@ -144,7 +148,7 @@
       width: 150px !important;
       padding-left: 10px !important;
       &__intro {
-        font-size: 11px !important;
+        font-size: 13px !important;
         color: #ffffffcc !important;
         width: 300px;
         margin-top: 20px !important;
