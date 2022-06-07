@@ -11,24 +11,11 @@ import _ from "lodash";
 import { restaurantsguide } from "constant";
 // import restaurantsguide  from "constant/restaurantsguide.json" ;
 
-
 export interface IRestaurantGuideProps {
   id: number;
-  
 }
 
 export default function RestaurantGuide(props: IRestaurantGuideProps) {
-
-  // const [restaurantsguide, Setrestaurantsguide] = React.useState();
-  // console.log(restaurantsguide,'restaurantsguide');
-  
-
-  //    React.useEffect(() => {
-  //       let url = "/constant/restaurantsguide";
-  //       fetch(url)
-  //           .then(res => res.json())
-  //           .then(restaurantsguide => Setrestaurantsguide(restaurantsguide))
-  //       }, []);
 
   const settings = {
     className : "{style.slider_restaurants}",
