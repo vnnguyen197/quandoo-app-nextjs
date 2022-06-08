@@ -1,3 +1,4 @@
+import Booking from "@/components/Booking";
 import Districts from "@/components/Districts";
 import RestaurantGuide from "@/components/RestaurantGuide";
 import SildeFind from "@/components/SlideFind";
@@ -14,10 +15,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SildeFind />
-      <div className={styles.content}>
         <RestaurantGuide />
         <Districts  />
-      </div>
+        <Booking />
     </div>
   );
 };

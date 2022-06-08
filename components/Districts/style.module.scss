@@ -1,11 +1,10 @@
 .content {
-  margin: 40px 0;
-  // padding: 0 13px;
+  margin-bottom: 50px;
   padding: 0 150px;
-
   &__title--h2 {
     font-size: 25px;
     color: #3a4354;
+    font-weight: 650;
   }
   &__title--p {
     color: #3a4354b3;
@@ -13,7 +12,7 @@
   }
   &__buttons {
     height: 80px;
-    width: 180px;
+    width: 192px;
     margin: 0;
     border-radius: 10px;
     font-size: 20px;
@@ -45,6 +44,8 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    margin-right: -12px;
+
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
