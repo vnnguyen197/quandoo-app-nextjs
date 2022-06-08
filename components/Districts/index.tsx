@@ -1,38 +1,35 @@
 import * as React from "react";
 import style from "./style.module.scss";
-import { Container, Row, Col } from "reactstrap";
 import {districts} from "constant"
 export interface IDistrictsProps {}
 
 export default function Districts(props: IDistrictsProps) {
   return (
-    <div>
-      <div>
-        <h2>{districts.h2}</h2>
-        <h3>{districts.h3}</h3>
+    <div className={style.content}>
+      <div className={style.content__title}>
+        <h2 className={style["content__title--h2"]}>{districts.h2}</h2>
+        <p className={style["content__title--p"]}>{districts.h3}</p>
       </div>
-      <Container>
-        <Row>
-          <Col sm>
-            <button>{districts.button1}</button>
-          </Col>
-          <Col sm>
-            <button>{districts.button2}</button>
-          </Col>
-          <Col sm>
-            <button>{districts.button3}</button>
-          </Col>
-          <Col sm>
-            <button>{districts.button4}</button>
-          </Col>
-          <Col sm>
-            <button>{districts.button5}</button>
-          </Col>
-          <Col sm>
-            <button>{districts.button6}</button>
-          </Col>
-        </Row>
-      </Container>
+        <div className={style.content__row}>
+          <div className={style.content__div}>
+            <button className={`${style.content__buttons} ${style["content__buttons--btn1"]}`}>{districts.button1}</button>
+          </div>
+          <div className={style.content__div}>
+            <button className={`${style.content__buttons} ${style["content__buttons--btn2"]}`}>{districts.button2}</button>
+          </div>
+          <div className={style.content__div}>
+            <button className={`${style.content__buttons} ${style["content__buttons--btn3"]}`}>{districts.button3}</button>
+          </div>
+          <div className={style.content__div}>
+            <button className={`${style.content__buttons} ${style["content__buttons--btn4"]}`}>{districts.button4}</button>
+          </div>
+          <div className={style.content__div}>
+            <button className={`${style.content__buttons} ${style["content__buttons--btn5"]}`}>{districts.button5}</button>
+          </div>
+          <div className={style.content__div}>
+            <button className={`${style.content__buttons} ${style["content__buttons--btn6"]}`}>{districts.button6}</button>
+          </div>
+        </div>
     </div>
   );
 }

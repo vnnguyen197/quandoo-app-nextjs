@@ -1,7 +1,14 @@
-.container {
-  /* padding: 0 2rem; */
-}
 
+.content{
+  padding:0 150px ;
+ 
+}
+@media only screen and (min-width: 390px){
+  .content{
+    padding:0 10px !important;
+   
+  }
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;

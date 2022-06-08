@@ -1,0 +1,53 @@
+.content{
+  margin: 40px 0;
+  padding: 0 13px;
+  &__title--h2{
+      font-size: 25px;
+      color: #3a4354;
+  }
+  &__title--p{
+      color: #3a4354b3;
+      font-size: 18px;
+  }
+  &__buttons{
+    height: 80px;
+    width: 185px;
+    margin: 0;
+    border-radius: 10px ;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+    &--btn1, &--btn4{
+      background-color: rgb(35, 40, 51);
+    } 
+    &--btn2{
+      background-color: rgb(58, 67, 84)
+    }
+    &--btn3{
+      background-color: rgb(85, 97, 120);
+    }
+    &--btn5{
+      background-color: rgb(58, 67, 84)
+    }
+    &--btn6{
+      background-color: rgb(85, 97, 120)
+    }
+  }
+  &__row{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 390px){
+    .content__buttons{
+      width: 166px !important;
+    }
+    .content__title--h2{
+      font-size: 20px;
+  }
+    .content__title--p{
+      font-size: 14px;
+  }
+}
