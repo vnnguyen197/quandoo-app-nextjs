@@ -1,53 +1,68 @@
-.content{
+.content {
   margin: 40px 0;
-  padding: 0 13px;
-  &__title--h2{
-      font-size: 25px;
-      color: #3a4354;
+  // padding: 0 13px;
+  padding: 0 150px;
+
+  &__title--h2 {
+    font-size: 25px;
+    color: #3a4354;
   }
-  &__title--p{
-      color: #3a4354b3;
-      font-size: 18px;
+  &__title--p {
+    color: #3a4354b3;
+    font-size: 18px;
   }
-  &__buttons{
+  &__buttons {
     height: 80px;
-    width: 185px;
+    width: 180px;
     margin: 0;
-    border-radius: 10px ;
+    border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
     color: #ffff;
-    &--btn1, &--btn4{
+    &--btn1,
+    &--btn4 {
       background-color: rgb(35, 40, 51);
-    } 
-    &--btn2{
-      background-color: rgb(58, 67, 84)
+      border: 1px solid rgb(35, 40, 51);
     }
-    &--btn3{
+    &--btn2 {
+      background-color: rgb(58, 67, 84);
+      border: 1px solid rgb(58, 67, 84);
+    }
+    &--btn3 {
       background-color: rgb(85, 97, 120);
+      border: 1px solid rgb(85, 97, 120);
     }
-    &--btn5{
-      background-color: rgb(58, 67, 84)
+    &--btn5 {
+      background-color: rgb(58, 67, 84);
+      border: 1px solid rgb(58, 67, 84);
     }
-    &--btn6{
-      background-color: rgb(85, 97, 120)
+    &--btn6 {
+      background-color: rgb(85, 97, 120);
+      border: 1px solid rgb(85, 97, 120);
     }
   }
-  &__row{
+  &__row {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
   }
 }
-
-@media only screen and (min-width: 390px){
-    .content__buttons{
-      width: 166px !important;
-    }
-    .content__title--h2{
-      font-size: 20px;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    padding: 0 40px !important;
   }
-    .content__title--p{
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .content {
+    padding: 0 24px;
+    &__buttons {
+      width: 165px !important;
+    }
+    &__title--h2 {
+      font-size: 20px;
+    }
+    &__title--p {
       font-size: 14px;
+    }
   }
 }
