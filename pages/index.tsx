@@ -15,9 +15,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SildeFind />
-        <RestaurantGuide />
-        <Districts  />
-        <Booking />
+      <RestaurantGuide />
+      <Districts />
+      <Booking />
     </div>
   );
 };
