@@ -31,8 +31,8 @@
     justify-content: center;
     align-items: center;
   }
-   &__title{
-       display: flex;
+  &__title {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -52,43 +52,91 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
-  .content{
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
     display: block !important;
-    &__h1{
+    &__h1 {
       display: flex;
       justify-content: center;
-      &--span{
-        padding-left: 10px ;
+      &--span {
+        padding-left: 10px;
       }
     }
     &__border {
       display: none !important;
     }
-    &__items{
+    &__items {
       flex-direction: row-reverse !important;
       justify-content: space-between !important;
       padding: 0 32px;
-      &--flexbox{
-      flex-direction: row !important;
+      &--flexbox {
+        flex-direction: row !important;
       }
     }
-    &__title{
+    &__title {
       justify-content: flex-start !important;
       align-items: flex-start !important;
-      &--h2{
+      &--h2 {
         font-size: 18px !important;
         color: #3a4354;
       }
-      &--span{
+      &--span {
         color: #3a4354e6;
         width: 100%;
         text-align: none !important;
       }
     }
-    &__bottom{
+    &__bottom {
       flex-direction: column !important;
       gap: 50px !important;
+    }
+  }
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+  .content {
+    display: block !important;
+    &__h1 {
+      display: flex;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      &--span {
+        padding-left: 10px;
+      }
+    }
+    &__border {
+      display: none !important;
+    }
+    &__items {
+      flex-direction: row-reverse !important;
+      justify-content: space-between !important;
+      padding: 0 32px;
+      &--flexbox {
+        flex-direction: row !important;
+      }
+    }
+    &__title {
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      &--h2 {
+        font-size: 18px !important;
+        color: #3a4354;
+      }
+      &--span {
+        color: #3a4354e6;
+        width: 100%;
+        text-align: left !important;
+      }
+      &--user2{
+        padding-left: 20px !important;
+      }
+      &--user1{
+        padding-right: 17px !important;
+      }
+    }
+    &__bottom {
+      flex-direction: column !important;
+      gap: 0px !important;
     }
   }
 }

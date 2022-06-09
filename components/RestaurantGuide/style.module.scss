@@ -135,11 +135,15 @@
     padding-left: 24px;
     padding-right: 24px;
     h2{
-      font-size: 16px;  
+      font-size: 24px;  
+      flex-wrap: wrap;
     }
     .contentFind{
       padding-left: 10px !important;
       font-size: 16px !important;
+      p {
+        font-size: 16px !important;
+      }
     }
     .slider{
       margin: 0 !important;

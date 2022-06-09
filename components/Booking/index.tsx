@@ -15,9 +15,9 @@ export default function Booking(props: IBookingProps) {
           <div key={index}>
             <div className={style.content__items}>
               <Image className={style["content__items--img"]} src={item.img} alt={item.title}  width={210} height={140}  />
-              <div className={style.content__title}>
-              <h2 className={style["content__title--h2"]}>{item.title}</h2>
-              <span className={style["content__title--span"]}>{item.note}</span>
+              <div className={`${style.content__title} ${style['content__title--user1']}`}>
+                  <h2 className={style["content__title--h2"]}>{item.title}</h2>
+                  <span className={style["content__title--span"]}>{item.note}</span>
               </div>
             </div>
           </div>
@@ -26,9 +26,9 @@ export default function Booking(props: IBookingProps) {
           <div key={index}>
             <div className={`${style.content__items} ${style["content__items--flexbox"]}`} >
               <Image className={style["content__items--img"]} src={item.img} alt={item.title}  width={175} height={140}  />
-              <div className={style.content__title}>
-              <h2 className={style["content__title--h2"]}>{item.title}</h2>
-              <span className={style["content__title--span"]}>{item.note}</span>
+              <div className={`${style.content__title} ${style['content__title--user2']}`}>
+                  <h2 className={style["content__title--h2"]}>{item.title}</h2>
+                  <span className={style["content__title--span"]}>{item.note}</span>
               </div>
             </div>
           </div>
@@ -37,9 +37,9 @@ export default function Booking(props: IBookingProps) {
           <div key={index}>
             <div className={style.content__items}>
               <Image className={style["content__items--img"]} src={item.img} alt={item.title}  width={140} height={140}  />
-              <div className={style.content__title}>
-              <h2 className={style["content__title--h2"]}>{item.title}</h2>
-              <span className={style["content__title--span"]}>{item.note}</span>
+              <div className={`${style.content__title} ${style['content__title--user1']}`}>
+                  <h2 className={style["content__title--h2"]}>{item.title}</h2>
+                  <span className={style["content__title--span"]}>{item.note}</span>
               </div>
             </div>
           </div>

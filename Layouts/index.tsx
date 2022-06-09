@@ -3,7 +3,9 @@ import Header from "@/components/Header";
 import * as React from "react";
 
 export interface LayoutProps {
-  children: any;
+}
+export interface LayoutsProps {
+  children: string[];
 }
 
 const Layouts: React.FC<LayoutProps> = ({ children }) => {

@@ -1,151 +1,169 @@
 .footer {
   background-color: #232833;
   color: #ffffff;
-  .footerMain {
+  &__main {
     display: flex;
     justify-content: space-around;
     padding-top: 110px;
-    .footerItem {
-      .mobile {
-        display: none;
-      }
-      .desktop {
-        .item {
-          color: #ffffffcc;
-          padding: 8px 0;
-        }
-      }
+  }
+  &__item {
+    &--mobile {
+      display: none;
     }
-    .footerSocial {
-      .icons1 {
-        width: 25px;
-        height: 25px;
+    &--des {
+      &--title {
+        color: #ffffffcc;
+        padding: 8px 0;
+        font-size: 16px !important;
       }
-      .icons {
-        margin-left: 20px;
-        width: 25px;
-        height: 25px;
-      }
-    }
-    .footerApps {
-      .images {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-        .googlePlay {
-          padding-bottom: 20px;
-        }
+      &--h3{
+        font-size: 17px ;
+        font-weight: bold;
       }
     }
   }
-  .footerBottom {
-    padding-bottom: 40px;
-    padding-left: 58px;
-    .offcialApps {
-      margin-left: 15px;
-      color: #ffffffcc;
+  &__social {
+    &--h3{
+      font-size: 17px ;
+      font-weight: bold;
     }
+    &--item1 {
+      width: 25px;
+      height: 25px;
+    }
+    &--item2 {
+      margin-left: 20px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__apps--icons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  &__apps--h3{
+    font-size: 17px ;
+    font-weight: bold;
+  }
+  &__googleplay {
+    padding-bottom: 20px;
+  }
+
+  &__bottom {
+    padding: 0 0 40px 58px;
+  }
+  &__intro {
+    margin-left: 15px;
+    color: #ffffffcc;
   }
 }
 // apply to tablet
-@media (min-width: 768px) and (max-width: 1024px) {
-  .footerMain {
+@media (min-width: 480px) and (max-width: 1024px) {
+  .footer__main {
     flex-wrap: wrap;
     justify-content: space-between !important;
     padding-top: 120px !important;
     padding-left: 40px;
-    .footerItem {
-      width: 43%;
-      margin-right: 10px !important;
-    }
-    .footerSocial {
-      padding-right: 64px;
-      width: 44%;
-    }
   }
-  .footerBottom {
-    padding-left: 25px !important;
-    .offcialApps {
-      font-size: 0.9em;
-    }
+  .footer__item {
+    width: 43%;
+    margin-right: 10px !important;
+    font-size: 20px !important;
   }
-  .footerApps {
-    .images {
+  .footer__social {
+    padding-right: 64px;
+    width: 44%;
+  }
+  .footer__apps {
+    &--icons {
       display: flex;
       flex-direction: row !important;
       margin-bottom: 50px !important;
     }
   }
+  .footer__bottom {
+    padding-left: 25px !important;
+  }
+  .footer__intro {
+    font-size: 16px !important;
+  }
 }
+
 // apply to mobile
-@media (min-width: 320px) and (max-width: 768px) {
-  .footer {
-    .footerMain {
-      flex-direction: column !important;
-      padding-top: 50px;
-      margin-left: 20px;
-      .footerItem {
-        .desktop {
-          display: none;
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer__main {
+    flex-direction: column !important;
+    padding-top: 50px;
+    margin-left: 20px;
+  }
+  .footer__item {
+    &--des {
+      display: none !important;
+    }
+    &--mobile {
+      display: block;
+      &--collapse {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        &--h3{
+          font-size: 18px;
+          padding: 10px 0;
         }
-        .mobile {
-          display: block;
-          .collapseMobile {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 14px;
-            .collapseIcon {
-              .icon{
-                font-size: 12px !important;
-                padding-right: 20px !important;
-                height: 20px;
-              }
-            }
-          }
-          .collapseItemMobile {
-            display: block;
-            .item {
-              color: #ffffffcc;
-              padding: 8px 0;
-            }
-          }
-        }
-      }
-      .h3 {
-        display: none;
-      }
-      .footerSocial {
-        padding: 30px 0 !important;
-        .icons1 {
-          height: 50px !important;
-          width: 35px !important;
-        }
-        .icons {
-          margin-left: 30px;
-          height: 50px !important;
-          width: 35px !important;
-        }
-      }
-      .footerApps {
-        .images {
-          flex-direction: row;
-          align-items: baseline;
-          .googlePlay {
-            padding-right: 10px;
-          }
+        &--icons--item {
+          padding-right: 20px !important;
+          height: 20px !important;
         }
       }
     }
-    .footerBottom {
-      width: 150px !important;
-      padding-left: 10px !important;
-      .offcialApps {
-        font-size: 11px !important;
-        color: #ffffffcc !important;
-        width: 300px;
-        margin-top: 20px !important;
-      }
+  }
+
+  .footer__subtitle {
+    display: block;
+    &--item {
+      color: #ffffffcc;
+      padding: 8px 0;
+      font-size: 16px !important;
     }
+  }
+
+  .footer__social {
+    padding: 30px 0 !important;
+    &--h3 {
+      display: none;
+    }
+    &--item1 {
+      height: 50px !important;
+      width: 35px !important;
+    }
+    &--item2 {
+      margin-left: 30px;
+      height: 50px !important;
+      width: 35px !important;
+    }
+  }
+  .footer__apps {
+    &--h3 {
+      display: none;
+    }
+    &--icons {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+  .footer__googleplay {
+    padding-right: 10px;
+  }
+  .footer_bottom {
+    width: 150px !important;
+    padding-left: 10px !important;
+  }
+  .footer__intro {
+    font-size: 13px !important;
+    color: #ffffffcc !important;
+    width: 300px;
+    margin-top: 20px !important;
   }
 }
