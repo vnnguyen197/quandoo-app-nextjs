@@ -1,4 +1,5 @@
 import Booking from "@/components/Booking";
+import BookingApp from "@/components/BookingApp";
 import Districts from "@/components/Districts";
 import RestaurantGuide from "@/components/RestaurantGuide";
 import SildeFind from "@/components/SlideFind";
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <RestaurantGuide />
       <Districts />
       <Booking />
+      <BookingApp />
     </div>
   );
 };

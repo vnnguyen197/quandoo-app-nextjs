@@ -30,7 +30,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: false,
-          dots: true,
+          dots: false,
         },
       },
       {

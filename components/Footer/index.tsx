@@ -11,8 +11,6 @@ import googlePlay from "../../public/images/googleplay.svg";
 import appStore from "../../public/images/appstore.svg";
 import imgfooter from "../../public/images/imgfooter.png.jpg";
 import { dataFooter } from "constant";
-import useCollapse from "react-collapsed";
-import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import FooterMobile from "./components";
 
 export interface FooterProps {}
