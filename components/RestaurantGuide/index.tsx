@@ -9,7 +9,6 @@ import Slider from "react-slick";
 import Link from "next/link";
 import _ from "lodash";
 import { restaurantsguide } from "constant";
-// import restaurantsguide  from "constant/restaurantsguide.json" ;
 
 export interface IRestaurantGuideProps {
   id: number;
@@ -37,7 +36,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2.4,
           slidesToScroll: 2,
           initialSlide: 2,
           infinite: false,
@@ -58,36 +57,32 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
 
   return (
     <div className={style.content}>
-      <h2> {restaurantsguide.title_main1} <span>{restaurantsguide.title_span}</span> {restaurantsguide.title_main2} </h2>
-      <div className={style.contentFind}>
-        <h3> {restaurantsguide.tilte_child} </h3>
-        <p>{restaurantsguide.content}</p>
+      <h2 className={style.content__h2}> {restaurantsguide.title_main1} <span className={style["content__h2--span"]}>{restaurantsguide.title_span}</span> {restaurantsguide.title_main2} </h2>
+      <div className={style.content__find}>
+        <h3 className={style["content__find--h3"]}> {restaurantsguide.tilte_child} </h3>
+        <p className={style["content__find--p"]}>{restaurantsguide.content}</p>
       </div>
-      <div className={style.slider}>
+      <div className={style.content__slider}>
         <Slider {...settings}>
           {restaurantsguide.data && restaurantsguide.data.map((item, index) => (
-            <div className={style.contentFood} key={index} {...restaurantsguide}>
+            <div className={style.content__food} key={index} {...restaurantsguide}>
               <Link href={`/quandoo/${item.id}`}>
-                  <div className={style.contentBox}>
-                    <div className={style.imgFood}>
-                      <Image src={item.img} alt={item.title} width={323} height={182} />
-                    </div>
-                    <div className={style.contentBoxInfor}>
-                      <div className={style.title}>
+                  <div className={style.content__box}>
+                      <Image style={{borderRadius: "8px"}} className={style["content__box--img--item"]} src={item.img} alt={item.title} width={323} height={182} />
+                      <div className={style.content__title}>
                         {item.title.length > 36 ? (
-                          <h3>{item.title.slice(0, 36)}...</h3>
+                          <h3 className={style["content__title--h3"]}>{item.title.slice(0, 36)}...</h3>
                         ) : (
-                          <h3>{item.title}</h3>
+                          <h3 className={style["content__title--h3"]}>{item.title}</h3>
                         )}
                       </div>
-                      <div className={style.mainBottom}>
-                      <div className={style.contentRight}>
-                        <div className={style.title}>
-                            <div className={style.location}>{item.location}</div>
-                            <span className={style.range}>{item.range}</span>
-                            <span className={style.price}>
+                    <div className={style.content__bottom}>
+                      <div className={style.content__right}>
+                            <div className={style["content__right--range"]}>{item.location}</div>
+                            <span className={style["content__right--range"]}>{item.range}</span>
+                            <span className={style["content__right--price"]}>
                               {_.times(item.price, (i) => (
-                                <span className={style.bold} key={i}>
+                                <span className={style["content__right--price--bold"]} key={i}>
                                   $
                                 </span>
                               ))}
@@ -95,12 +90,11 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
                                 <span key={x}>$</span>
                               ))}
                             </span>
-                        </div>
                       </div>
-                      <div className={style.contentLeft}>
-                        <div className={style.rate}>{item.rate}<span>/6</span></div>
-                        <div className={style.comment}>
-                          <span className={style.commentIcon}>
+                      <div className={style.content__left}>
+                        <div className={style.content__rate}>{item.rate}<span className={style["content__rate--span"]}>/6</span></div>
+                        <div className={style.content__comment}>
+                          <span className={style["content__comment--span"]}>
                           <FontAwesomeIcon icon={faMessage} size="lg" width={12} height={12} fixedWidth />
                           </span>
                           <span style={{ marginLeft: "5px" }}>
@@ -108,18 +102,17 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
                           </span>
                         </div>
                       </div>
-                      </div> 
-                    </div>
+                    </div> 
                   </div>
                 </Link>           
             </div>
           ))}
         </Slider>
       </div>
-      <div className={style.button}>
-        <button type="button">More restaurants</button>
+      <div className={style.content__button}>
+        <div className={style["content__button--btn"]} type="button">More restaurants</div>
         <Link href="/">
-          <a>More restaurants</a>
+          <a className={style["content__button--a"]}>More restaurants</a>
         </Link>
       </div>
     </div>
