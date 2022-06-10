@@ -128,7 +128,8 @@
   }
   .directory__content{
     background-image: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(17, 87, 167, 0) 60%), url("https://qcm.imgix.net/b2b_banner_bg.png?w=300") !important;
-    background-repeat: no-repeat !important; 
+    background-repeat: round !important; 
+    border-radius: 0px !important;
   }
   .directory__bottom {
     margin-bottom: 48px;
