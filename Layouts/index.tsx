@@ -4,11 +4,11 @@ import * as React from "react";
 
 export interface LayoutProps {
 }
-export interface LayoutsProps {
-  children: any;
+interface Props {
+  children: React.ReactNode;
 }
 
-const Layouts: React.FC<LayoutProps> = ({ children }) => {
+const Layouts: React.FC<Props> = ({ children }) => {
   return (
     <>
       <div className="app-root">
