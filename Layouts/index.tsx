@@ -5,7 +5,7 @@ import * as React from "react";
 export interface LayoutProps {
 }
 export interface LayoutsProps {
-  children: string[];
+  children: any;
 }
 
 const Layouts: React.FC<LayoutProps> = ({ children }) => {
