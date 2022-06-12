@@ -109,8 +109,8 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
           ))}
         </Slider>
       </div>
-      <div className={style.content__button}>
-        <div className={style["content__button--btn"]} type="button">More restaurants</div>
+      <div className={style.content__button}> 
+        <div className={style["content__button--btn"]} >More restaurants</div>
         <Link href="/">
           <a className={style["content__button--a"]}>More restaurants</a>
         </Link>
