@@ -78,7 +78,7 @@ export default function TopDistricts(props: ITopDistrictsProps) {
             <ul className={style["content__subtitle--ul"]}>
               {topDistricts.data1.map((item,index)=>(
                 <li key={index} className={style["content__subtitle--ul--li"]}> 
-                   <FontAwesomeIcon icon={faCaretRight} size="sm" style={{ color: "orange", paddingRight:'5px' }} fixedWidth />
+                   <FontAwesomeIcon icon={faCaretRight} size="sm" style={{ color: "orange", paddingRight:'5px'}} fixedWidth />
                       {item}
                 </li>
               ))}
