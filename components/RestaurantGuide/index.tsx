@@ -96,7 +96,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
                           <span className={style["content__comment--span"]}>
                           <FontAwesomeIcon icon={faMessage} size="sm" width={8} height={8} fixedWidth />
                           </span>
-                          <span style={{ marginLeft: "5px" }}>
+                          <span style={{ marginLeft: "5px", fontSize: "14px" }}>
                             {item.comment}
                           </span>
                         </div>
