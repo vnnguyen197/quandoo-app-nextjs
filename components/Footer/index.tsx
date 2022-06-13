@@ -21,23 +21,19 @@ function Footer(props: FooterProps) {
       <div className={style.footer__main}>
         {dataFooter.map((item, index) => (
           <div className={style.footer__item} key={index}>
-            <div className={style["footer__item--des"]}>
-              <h3 className={style["footer__item--des--h3"]}>{item.title}</h3>
-              <>
-                {item.sub_title.map((sub_title, index) =>(
+              <div className={style["footer__item--des"]}>
+                <h3 className={style["footer__item--des--h3"]}>{item.title}</h3>
+                  {item.sub_title.map((sub_title, index) =>(
                     <div key={index}>
-                        <div className={style["footer__item--des--title"]}>
-                          {sub_title}
-                        </div>
+                        <div className={style["footer__item--des--title"]}>{sub_title}</div>
                     </div>
-                ))}
-              </>
-            </div>
-            </div> 
+                  ))}
+              </div>
+          </div> 
         ))}
-          <div className={style["footer__item--mobile"]}>
-               <FooterMobile/>
-          </div>
+              <div className={style["footer__item--mobile"]}>
+                <FooterMobile/>
+              </div>
         <div className={style.footer__social}>
           <h3 className={style["footer__social--h3"]}>SOCIAL</h3>
           <FontAwesomeIcon className={style["footer__social--item1"]} icon={faFacebook}/>

@@ -94,7 +94,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
                         <div className={style.content__rate}>{item.rate}<span className={style["content__rate--span"]}>/6</span></div>
                         <div className={style.content__comment}>
                           <span className={style["content__comment--span"]}>
-                          <FontAwesomeIcon icon={faMessage} size="lg" width={12} height={12} fixedWidth />
+                          <FontAwesomeIcon icon={faMessage} size="sm" width={8} height={8} fixedWidth />
                           </span>
                           <span style={{ marginLeft: "5px" }}>
                             {item.comment}
