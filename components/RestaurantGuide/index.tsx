@@ -11,7 +11,6 @@ import _ from "lodash";
 import { restaurantsguide } from "constant";
 
 export interface IRestaurantGuideProps {
-  id: number;
 }
 
 export default function RestaurantGuide(props: IRestaurantGuideProps) {
