@@ -6,8 +6,6 @@ import { districts } from "constant";
 export interface IDistrictsProps {}
 
 export default function Districts(props: IDistrictsProps) {
-
-
   return (
     <div className={style.content}>
       <div className={style.content__title}>
@@ -33,8 +31,7 @@ export default function Districts(props: IDistrictsProps) {
         <button className={`${style.content__buttons} ${style["content__buttons--btn6"]}`}>
           {districts.button6}
         </button>
-      </div>
-     
+      </div>   
     </div>
   );
 }
