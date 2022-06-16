@@ -1,6 +1,8 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 1001;
   box-sizing: border-box;
@@ -17,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    margin-left: 15px;
   }
   &__right {
     display: flex;
@@ -31,7 +33,7 @@
     display: flex;
     align-items: center;
     color: #3a4354b3;
-    border-left: 1px solid rgba(128, 128, 128, 0.17);
+    border-left: 1px solid rgba(128, 128, 128, 0.077);
     padding: 0 10px;
     height: 68px;
     &--user {
@@ -44,11 +46,43 @@
   }
   &__icon {
     height: 13px;
-    padding-left: 3px;
+    padding-left: 2px;
   }
 }
-// reponsive for tablet
-@media only screen and (max-width: 1260px) {
+
+@media only screen and (min-width: 1920px) {
+  .header__right{
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__left{
+    width: 125px !important;
+    height: 49px !important;
+  }
+  .header__main{
+    height: 50px !important;
+  }
+  .header__left{
+    margin-left: 20px !important;
+  }
+  .header__item {
+    display: none !important;
+    &--right4 {
+      display: flex !important;
+    }
+    &--user {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .header__iconUser {
+    width: 33px !important;
+    height: 33px !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
   .header__item {
     display: none !important;
     &--right4 {
@@ -65,9 +99,29 @@
     height: 32px;
   }
 }
-// reponsive for mobile
-@media only screen and (max-width: 600px) {
-  .header__item1 {
+@media (min-width: 320px) and (max-width: 479px) {
+  .header__item, .header__item1 {
     display: none !important;
+    &--right4 {
+      display: flex !important;
+      font-size: 12px !important;
+    }
+    &--user {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .header__iconUser {
+    width: 33px !important; 
+    height: 33px !important;
+  }
+  .header__left{
+    width: 125px !important;
+    height: 49px !important;
+    margin-left: 20px !important;
+  }
+  .header__main{
+    height: 50px !important;
   }
 }

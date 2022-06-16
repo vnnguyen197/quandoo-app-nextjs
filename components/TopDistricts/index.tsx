@@ -27,6 +27,7 @@ export default function TopDistricts(props: ITopDistrictsProps) {
 
   return (
     <div className={style.content}>
+      <div className={style.content__border}></div>
       <Box className={style.content__box} sx={{ width: "100%", typography: "body1" }}>
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -83,7 +84,6 @@ export default function TopDistricts(props: ITopDistrictsProps) {
                 </li>
               ))}
             </ul>
-            {/* abc */}
           </AccordionDetails>
         </Accordion>
 

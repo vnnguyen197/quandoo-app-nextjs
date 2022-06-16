@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Averta, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 a {
@@ -13,4 +14,42 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.slick-slide {
+  width: 280px !important;
+}
+.slick-prev {
+  display: block;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: rgb(55 55 55 / 70%) 0px 6px 10px !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: -7px !important;
+  top: 34%;
+}
+.slick-disabled {
+  display: none !important;
+}
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  background-color: #ccffff !important;
+  box-shadow: rgb(51 51 51 / 10%) 0px 4px 8px !important;
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  right: -10px !important;
+  top: 27% !important;
+}
+.slick-prev::before,
+.slick-next::before {
+  font-size: 17px !important;
+  color: #000 !important;
+  line-height: 1.9 !important;
+}
+.slick-track {
+  min-width: 2500px !important;
 }

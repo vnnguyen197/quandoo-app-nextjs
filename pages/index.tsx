@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <Directory/>
       <Flavours  />  
       <BestRestaurants/>
-      <TopDistricts/>
+     <TopDistricts/>
     </div>
   );
 };

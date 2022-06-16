@@ -1,30 +1,37 @@
-.app {
-  background-color: rgb(250, 221, 144);
-  background-image: url(https://qcm.imgix.net/hp_ellipse_bg.png);
-  background-size: 375px;
-  background-repeat: no-repeat;
-  width: 644px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 15px;
-  background-position: 100% 150%;
-  &__booking {
+.booking {
+  margin-top: 48px;
+  &__app {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    background-color: rgb(250, 221, 144);
+    background-image: url(https://qcm.imgix.net/hp_ellipse_bg.png);
+    background-size: 375px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 292px;
+  }
+  &__content {
     display: flex;
-    border-radius: 16px;
-    background-position: 100% 150%;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
   }
   &__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    margin: 0 30px;
-    &--h4 {
-      width: 252px;
-      color: #3a4354;
-      font-weight: 650;
-      padding-bottom: 20px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    &--h3 {
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 28px;
+      color: rgb(58, 67, 84);
+      margin: 0px 0px 24px;
+      padding: 0px;
+      width: 230px;
     }
     &--img {
       display: flex;
@@ -35,72 +42,80 @@
     }
   }
   &__right {
-    padding-top: 63px;
-    width: 273px;
-  }
-}
-.border {
-  width: 800px;
-  border-top: 1px solid rgba(128, 128, 128, 0.73);
-  margin: 50px 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .app {
-    width: 100% !important;
-    margin-bottom: 50px !important;
-    &__booking {
-      flex-direction: column !important;
-    }
-      &__left--h4 {
-        text-align: center !important;
-        font-size: 21px;
-        color: rgb(58, 67, 84);
-        margin: 30px 0;
-        padding: 0px;
-        font-weight: 650px;
-      }
-      &__right {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 250px !important;
-      padding-top: 0 !important;
-    }
-  }
-  .border {
-    display: none !important;
-  }
-}
-@media (min-width: 390px) and (max-width: 768px) {
-  .app {
-    width: 390px !important ;
-    height: 400px !important;
-    margin-bottom: 50px !important;
-    background-size: 500px !important;
-    border-radius: 0 !important;
-    &__booking{
-      flex-direction: column !important ;
-    }
-    &__left--h4{
-      text-align: center;
-      width: 242px !important;
-      font-size: 20px !important;
-      padding: 20px 0 !important;
-      margin-left: 30px !important;
-    }
-    &__right{
-      padding-top: 35px;
-      text-align: center;
+    box-sizing: border-box;
+    width: 230px;
+    position: relative;
+    top: 63px;
+    right: 40px;
+    &--img {
+      vertical-align: bottom;
       width: 100% !important;
     }
   }
-  .border{
-    display: none !important;
+  &__border {
+    width: 800px;
+    border-top: 1px solid rgba(128, 128, 128, 0.586);
+    margin: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
   }
-  
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .booking {
+    &__app {
+      width: 644px !important;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 16px;
+      background-position: 100% 150% !important;
+      padding-top: 0px !important;
+    }
+    &__left {
+      -webkit-box-pack: justify;
+      justify-content: space-around !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .booking {
+    margin-top: 48px;
+    &__border{
+      display: none;
+    }
+    &__app {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      height: 100% !important;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__right {
+      vertical-align: bottom;
+      position: initial;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      &--img {
+        width: 198px !important;
+      }
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      &--h3 {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
 }
