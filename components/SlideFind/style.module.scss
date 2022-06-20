@@ -1,129 +1,131 @@
-.slideMain {
-  .slideImg {
+.slide {
+  padding-top: 50px;
+  &__img {
     background-image: url("https://qcm.imgix.net/home_hero_bg.png?auto=format&w=1200");
     background-size: cover;
     background-repeat: no-repeat;
     height: 110vh;
-    .slideContent {
-      margin: 0 180px;
-      .content {
-        padding-top: 180px;
-        h1 {
-          color: #ffff;
-          font-size: 3.5em;
-          margin: 0;
-        }
-        h2 {
-          margin-top: 10px;
-          color: #ffff;
-          font-size: 1.3rem;
-          padding-bottom: 70px;
-        }
-        .inputFind,
-        .inputSingapore {
-          margin-right: 15px;
-          border: 1px solid rgba(128, 128, 128, 0.4);
-          padding: 10px;
-          border-radius: 10px;
-          font-size: 1rem;
-        }
-        .inputFind {
-          width: 570px;
-          height: 56px;
-        }
-        .inputSingapore {
-          width: 350px;
-          height: 56px;
-        }
-        .search{
-          display: none;
-        }
-        button {
-          background-color: #f8b333;
-          border-radius: 10px;
-          border: 1px solid #f8b333;
-          margin-right: 15px;
-          width: 125px;
-          height: 56px;
-          color: #fff;
-          font-weight: bold;
-          font-size: 1.2rem;
-          &:hover {
-            cursor: pointer;
-            background-color: goldenrod;
-          }
-        }
-      }
+  }
+  &__contentCenter {
+    padding-top: 123px;
+    margin: auto;
+    max-width: 1170px;
+    &--h1 {
+      color: #ffff;
+      font-size: 3.5em;
+      margin: 0;
+      font-weight: 700;
+    }
+    &--h2 {
+      margin-top: 10px;
+      color: #ffff;
+      font-size: 1.3rem;
+      padding-bottom: 70px;
+    }
+  }
+  &__find,
+  &__singapore {
+    margin-right: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  &__find {
+    width: 50%;
+    height: 56px;
+  }
+  &__singapore {
+    width: 33%;
+    height: 56px;
+  }
+  &__search {
+    display: none;
+  }
+  &__button {
+    background-color: #f8b333;
+    border-radius: 10px;
+    border: 1px solid #f8b333;
+    margin-right: 15px;
+    width: 17%;
+    height: 56px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    &:hover {
+      cursor: pointer;
+      background-color: goldenrod;
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .slideImg {
-    height: 80vh !important;
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .slide {
+    padding-top: 70px !important;
+  &__img {
+    height: 720px !important;
     background-position: center !important;
-    .slideContent {
-      margin: 0 50px !important;
-      .content {
-        .inputFind {
-          width: 450px !important;
-        }
-        .inputSingapore {
-          width: 270px !important;
-        }
-        .search{
-          display: none !important;
-        }
-      }
-    }
+  }
+  &__content {
+      padding: 0 45px !important;
+  }
+  &__button{
+    width: 12% !important;
+  }
+  &__search {
+    display: none !important;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  .slideImg {
-    height: 60vh !important;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .slide__img {
+    height: 488px !important;
     background-position: center !important;
-    .slideContent {
-      margin: 0 !important;
-      .content {
-         margin: auto;
-          width: 90%;
-        .search {
-          width: 100% !important;
-          position: relative;
-          display: flex !important;
-          .icon {
-            position: absolute;
-            width: 25px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            margin-left: 10px;
-            color: #f8b333; 
-          }
-          .inputSearch {
-            width: 100% !important;
-            height: 50px;
-            background: #ffff;
-            border: none;
-            font-size: 14px;
-            color: #63717f;
-            padding-left: 45px;
-            border-radius: 5px;
-          }
-        }
-        h1 {
-          font-size: 2.2em !important;
-          padding-bottom: 10px !important;
-        }
-        h2 {
-          font-size: 1.1rem !important;
-        }
-        .inputFind,
-        .inputSingapore,
-        button {
-          display: none;
-        }
-      }
+  }
+  .slide__content {
+    margin: 0 !important;
+  }
+  .slide__contentCenter {
+    margin: auto;
+    width: 90%;
+    padding-top: 60px;
+
+    &--h1 {
+      font-size: 2.2em !important;
+      padding-bottom: 10px !important;
     }
+    &--h2 {
+      font-size: 1.1rem !important;
+    }
+  }
+  .slide__search {
+    width: 100% !important;
+    position: relative;
+    display: flex !important;
+    top: 37px;
+    &--icon {
+      position: absolute;
+      width: 25px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      color: #f8b333;
+    }
+    &--input {
+      width: 100% !important;
+      height: 50px;
+      background: #ffff;
+      border: none;
+      font-size: 14px;
+      color: #63717f;
+      padding-left: 45px;
+      border-radius: 5px;
+    }
+  }
+  .slide__find,
+  .slide__singapore,
+  .slide__button {
+    display: none;
   }
 }

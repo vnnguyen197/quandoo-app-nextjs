@@ -17,7 +17,7 @@ export interface FooterProps {}
 
 function Footer(props: FooterProps) {
   return (
-    <footer className={style.footer}>
+    <div className={style.footer}>
       <div className={style.footer__main}>
         {dataFooter.map((item, index) => (
           <div className={style.footer__item} key={index}>
@@ -51,14 +51,16 @@ function Footer(props: FooterProps) {
               </div>
           </div>
         </div>
+        <div className={style.footer__bottom}>
+            <div className={style["footer__bottom--img"]}>
+              <div className={style["footer__bottom--img--footer"]}>
+                <Image src={imgfooter} width={165} height={37} alt="images footer"/>             
+              </div>
+                ©2022 Quandoo GmbH. All rights reserved
+            </div>
       </div>
-      <div className={style.footer__bottom}>
-        <Image className={style["footer__bottom--image"]} src={imgfooter} width={200} height={40} alt="images footer"/>
-        <div className={style.footer__intro}>
-          ©2022 Quandoo GmbH. All rights reserved
-        </div>
       </div>
-    </footer>
+    </div>
   );
 }
 

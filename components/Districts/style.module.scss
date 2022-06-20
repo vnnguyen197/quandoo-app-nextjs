@@ -1,6 +1,8 @@
 .content {
-  margin-bottom: 50px;
-  padding: 0 150px;
+  max-width: 1210px;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-bottom: 50px;
   &__title--h2 {
     font-size: 24px;
     color: #3a4354;
@@ -11,13 +13,19 @@
     font-size: 18px;
   }
   &__buttons {
-    height: 80px;
-    width: 192px;
     margin: 0;
-    border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #ffff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 80px;
+    max-width: calc(192px);
+    background-color: rgb(85, 97, 120);
+    flex: 0 0 calc(50% - 12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &--btn1,
     &--btn4 {
       background-color: rgb(35, 40, 51);
@@ -42,23 +50,31 @@
   }
   &__row {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
-    margin-right: -12px;
+    margin-right: -12px !important;
+  }
+}
 
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .content{
+    padding: 0 48px !important;
+    &__buttons{
+      flex: 1 1 0%;
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .content {
-    padding: 0 40px !important;
+  .content{
+    padding: 0 32px !important;
+  &__buttons{
+    max-width: 198px !important;
   }
+}
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .content {
-    padding: 0 24px;
-    &__buttons {
-      width: 165px !important;
-    }
+    padding: 0 24px !important;
     &__title--h2 {
       font-size: 20px;
     }

@@ -16,13 +16,23 @@ export interface IRestaurantGuideProps {
 export default function RestaurantGuide(props: IRestaurantGuideProps) {
 
   const settings = {
-    className : "{style.slider_restaurants}",
+    className : `${style.slider_restaurants}`,
+    // className : `${style.slick_list}`,
     dots: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: false,
     responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: false,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {

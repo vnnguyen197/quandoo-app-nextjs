@@ -11,7 +11,7 @@ export default function BestRestaurants(props: IBestRestaurantsProps) {
     <div className={style.content}>
       <div className={style.content__left}>
         <div className={style["content__left--title"]}>
-          <h1 className={style["content__left--title--h2"]}>
+          <h1 className={style["content__left--title--h1"]}>
             {bestRestaurants.title}
           </h1>
         </div>
@@ -32,57 +32,61 @@ export default function BestRestaurants(props: IBestRestaurantsProps) {
               key={index}
               {...bestRestaurants}
             >
-              <div className={style.content__image}>
-                <Image
-                  style={{ borderRadius: "8px" }}
-                  className={style["content__box--img--item"]}
-                  src={item.img}
-                  alt={item.title}
-                  width={323}
-                  height={182}
-                />
-              </div>
-              <div className={style.content__title}>
-                <div className={style["content__title--status"]}>
-                  {item.status}
+              <div className={style.content__foodRight}>
+                <div className={style.content__image}>
+                  <Image
+                    style={{ borderRadius: "8px" }}
+                    src={item.img}
+                    alt={item.title}
+                    width={323}
+                    height={182}
+                  />
                 </div>
-                <h5 className={style["content__title--h5"]}>{item.title}</h5>
-                <div className={style["content__title--range"]}>
-                  {item.range}
-                </div>
-                <span className={style["content__title--range"]}>
-                  {item.location}
-                </span>
-                <span className={style["content__title--price"]}>
-                  {_.times(item.price, (i) => (
-                    <span
-                      className={style["content__title--price--bold"]}
-                      key={i}
-                    >
-                      {" "}
-                      ${" "}
+                <div className={style.content__title}>
+                  <div className={style.content__titleRight}>
+                    <h5 className={style["content__titleRight--h5"]}>
+                      {item.title}
+                    </h5>
+                    <div className={style["content__titleRight--range"]}>
+                      {item.range}
+                    </div>
+                    <div>
+                    <span className={style["content__titleRight--range"]}>
+                      {item.location}
                     </span>
-                  ))}
-                  {_.times(4 - item.price, (x) => (
-                    <span key={x}>$</span>
-                  ))}
-                </span>
-                <div>
-                  <span className={style.content__rate}>
-                    {item.rate}
-                    <span className={style["content__rate--span"]}>/6</span>
-                  </span>
-                  <span className={style.content__comment}>
-                    {item.comment}
-                  </span>
+                    <span className={style["content__titleRight--price"]}>
+                      {_.times(item.price, (i) => (
+                        <span
+                          className={style["content__titleRight--price--bold"]}
+                          key={i}
+                        >
+                          {" "}
+                          ${" "}
+                        </span>
+                      ))}
+                      {_.times(4 - item.price, (x) => (
+                        <span key={x}>$</span>
+                      ))}
+                    </span>
+                    </div>
+                    <div>
+                      <span className={style.content__rate}>
+                        {item.rate}
+                        <span className={style["content__rate--span"]}>/6</span>
+                      </span>
+                      <span className={style.content__comment}>
+                        {item.comment}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
-      </div>
-      <div className={style["content__button"]}>
-        <div className={style["content__right--button--btn"]}>
-          {bestRestaurants.button}
+        <div className={style.content__button}>
+          <div className={style["content__button--btn"]}>
+            {bestRestaurants.button}
+          </div>
         </div>
       </div>
     </div>

@@ -13,21 +13,21 @@ const data = {
 
 export default function SildeFind(props: SildeFindProps) {
   return (
-      <div className={style.slideMain}>
-        <div className={style.slideImg}>
-          <div className={style.slideContent}>
-            <div className={style.content}>
-              <h1>{data.h1}</h1>
-              <h2>{data.h2}</h2>  
-              <input className={style.inputFind} placeholder="Find restaurant or cuisines" type="text"/>
-              <input className={style.inputSingapore} placeholder="Singapore" type="text" />
-              <div className={style.search}>
-                <span className={style.icon}>
+      <div className={style.slide}>
+        <div className={style.slide__img}>
+          <div className={style.slide__content}>
+            <div className={style.slide__contentCenter}>
+              <h1 className={style["slide__contentCenter--h1"]}>{data.h1}</h1>
+              <h2 className={style["slide__contentCenter--h2"]}>{data.h2}</h2>  
+              <input className={style.slide__find} placeholder="Find restaurant or cuisines" type="text"/>
+              <input className={style.slide__singapore} placeholder="Singapore" type="text" />
+              <div className={style.slide__search}>
+                <span className={style["slide__search--icon"]}>
                   <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" fixedWidth />
                 </span>
-                <input className={style.inputSearch} placeholder="Search" type="search" />
+                <input className={style["slide__search--input"]} placeholder="Search" type="search" />
               </div>
-              <button type="submit">Find</button>
+              <button className={style.slide__button} type="submit">Find</button>
             </div>
           </div>
         </div>
