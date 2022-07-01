@@ -1,7 +1,7 @@
 .content {
-  max-width: 1210px;
+  width: 1210px;
+  max-width: 100%;
   margin: 0px auto;
-  padding-left: 10px;
   padding-bottom: 50px;
   &__title--h2 {
     font-size: 24px;
@@ -58,7 +58,6 @@
 
 @media (min-width: 1024px) and (max-width: 1920px) {
   .content{
-    padding: 0 48px !important;
     &__buttons{
       flex: 1 1 0%;
     }
@@ -68,7 +67,8 @@
   .content{
     padding: 0 32px !important;
   &__buttons{
-    max-width: 198px !important;
+    width: 198px !important;
+    max-width: 100% !important;
   }
 }
 }

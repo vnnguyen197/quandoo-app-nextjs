@@ -1,5 +1,6 @@
 .content {
-  max-width: 1210px;
+  width: 1210px;
+  max-width: 100%;
   margin: 0px auto;
   &__h2 {
     font-weight: 700;
@@ -16,7 +17,6 @@
   &__find {
     color: #3a4354;
     font-size: 22px;
-    padding-left: 10px;
     &--h3 {
       margin-bottom: 0;
     }
@@ -33,8 +33,8 @@
   }
   }
   &__food {
-    padding: 0px 10px;
-
+    // padding: 0px 10px;
+    // padding-left: 10px;
   }
   &__title--h3 {
     font-size: 16px;
@@ -97,8 +97,7 @@
     }
   }
   &__button {
-    border: 10px;
-    padding: 35px 10px;
+    padding: 35px 0;
     &--btn {
       display: flex;
       justify-content: center;
@@ -122,11 +121,9 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1920px) {
-      .content{
-        padding: 0 48px !important;
-      }
-}
+// @media (min-width: 1024px) and (max-width: 1920px) {
+      
+// }
 @media (min-width: 320px) and (max-width: 1024px) {
   .content {
     padding: 0 24px !important;

@@ -77,7 +77,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
             <div className={style.content__food} key={index} {...restaurantsguide}>
               <Link href={`/quandoo/${item.id}`}>
                   <div className={style.content__box}>
-                      <Image style={{borderRadius: "8px"}} className={style["content__box--img--item"]} src={item.img} alt={item.title} width={323} height={182} />
+                      <Image style={{borderRadius: "8px"}} className={style["content__box--img--item"]} src={item.img} alt={item.title} width={340} height={185} />
                       <div className={style.content__title}>
                         {item.title.length > 36 ? (
                           <h3 className={style["content__title--h3"]}>{item.title.slice(0, 36)}...</h3>
