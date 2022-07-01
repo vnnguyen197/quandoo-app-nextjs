@@ -1,13 +1,13 @@
-.content{
+.content {
   max-width: 1210px;
   margin: 0px auto;
-  &__top--h3{
+  &__top--h3 {
     font-weight: 700;
     font-size: 25px;
     line-height: 28px;
     color: rgb(58, 67, 84);
   }
-  &__top--span{
+  &__top--span {
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -15,62 +15,68 @@
     color: rgba(58, 67, 84, 0.7);
     margin-bottom: 100px;
   }
-  &__button{
+  &__button {
     padding: 20px 0;
-    &--btn{
+    &--btn {
       width: 116px;
       height: 48px;
       border-radius: 25px;
-      background-color: #76839C;
-      border: 1px solid #76839C;
+      background-color: #76839c;
+      border: 1px solid #76839c;
       color: #ffff;
       font-weight: bold;
     }
   }
-  &__bottom{
+  &__bottom {
     display: flex;
     justify-content: space-between;
     overflow: visible hidden;
     list-style: none;
     padding: 0;
-    margin: 0 ;
-    &___item{
-      min-width: 210px;
+    margin: 0;
+    &___item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     &--img:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
-    &--p{
-      display: flex;
-      justify-content: center;
+    &--p {
       font-weight: bold;
       color: #3a4354;
-      width: 170px;
+      padding-top: 10px;
+      word-break: initial;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 102px;
+      text-align: center;
+      margin: 0;
       &:hover {
         cursor: pointer;
       }
     }
   }
 }
- @media (min-width:600px) and (max-width:1024px) {
-    .content{
-      padding: 20px 40px !important;
-      &__top--h3{
-        font-size: 21px !important;
-      }
-      &__top--span{
-        font-size: 16px !important;
-      }
-    }
- }
- @media (min-width:320px) and (max-width:600px) {
-  .content{
-    padding: 20px 20px !important;
-    &__top--h3{
+@media (min-width: 600px) and (max-width: 1024px) {
+  .content {
+    padding: 20px 40px !important;
+    &__top--h3 {
       font-size: 21px !important;
     }
-    &__top--span{
+    &__top--span {
       font-size: 16px !important;
     }
   }
- }
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  .content {
+    padding: 20px 20px !important;
+    &__top--h3 {
+      font-size: 21px !important;
+    }
+    &__top--span {
+      font-size: 16px !important;
+    }
+  }
+}

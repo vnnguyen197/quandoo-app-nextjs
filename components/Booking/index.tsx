@@ -28,7 +28,7 @@ export default function Booking(props: IBookingProps) {
           <div key={index}>
             <div className={`${style.content__items} ${style["content__items--flexbox"]}`} >
             <div className={style.content__image}>
-              <Image className={style["content__image--img"]} src={item.img} alt={item.title}  width={175} height={140}  />
+              <Image className={style["content__image--img"]} src={item.img} alt={item.title}  width={210} height={140}  />
               </div>
               <div className={`${style.content__title} ${style['content__title--user2']}`}>
                   <h2 className={style["content__title--h2"]}>{item.title}</h2>
@@ -39,9 +39,9 @@ export default function Booking(props: IBookingProps) {
         ))}
         {booking.data3.map((item, index) => (
           <div key={index}>
-            <div className={style.content__items}>
+          <div className={style.content__items}>
             <div className={style.content__image}>
-              <Image className={style["content__image--img"]} src={item.img} alt={item.title}  width={140} height={110}  />
+              <Image className={style["content__image--img"]} src={item.img} alt={item.title}  width={210} height={140}  />
               </div>
               <div className={`${style.content__title} ${style['content__title--user1']}`}>
                   <h2 className={style["content__title--h2"]}>{item.title}</h2>

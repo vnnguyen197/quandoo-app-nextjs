@@ -42,7 +42,10 @@
   }
   &__item1 {
     color: #1873c3;
-    padding: 20px 20px;
+    padding-right: 20px;
+    height: 68px;
+    display: flex;
+    align-items: center;
   }
   &__icon {
     height: 13px;
@@ -62,7 +65,7 @@
   }
   .header__main{
     height: 50px !important;
-  }
+  } 
   .header__left{
     margin-left: 20px !important;
   }

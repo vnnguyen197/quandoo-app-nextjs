@@ -50,9 +50,9 @@
   }
   &__row {
     display: flex;
-    gap: 10px;
+    gap: 10px; 
     flex-wrap: wrap;
-    margin-right: -12px !important;
+    justify-content: space-between;
   }
 }
 
