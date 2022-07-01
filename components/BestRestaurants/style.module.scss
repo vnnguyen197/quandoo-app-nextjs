@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1210px;
+  width: 1210px;
+  max-width: 100%;
   margin: 0px auto;
   padding-top: 50px;
   &__left {
@@ -151,7 +152,7 @@
 
 @media (min-width: 600px) and (max-width: 1024px) {
   .content {
-    margin: 0px 48px !important;
+    padding: 0 5%;
     &__left--title--h2 {
       font-size: 40px;
       font-weight: bold;
@@ -161,12 +162,9 @@
 }
 @media (min-width: 320px) and (max-width: 600px) {
   .content {
-    margin: 0px 24px !important;
+    padding: 0 2%;
     &__food {
       border-bottom: 0 !important;
-    }
-    &__right {
-      padding-right: 10px !important;
     }
     &__left {
       padding-top: 100px;

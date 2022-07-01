@@ -41,7 +41,7 @@ export default function TopDistricts(props: ITopDistrictsProps) {
             <ul className={style["content__items--ul"]}>
               {topDistricts.data1.map((item,index)=>(
                 <li key={index} className={style["content__items--ul--li"]}> 
-                   <FontAwesomeIcon icon={faCaretRight}  style={{ color: "orange", paddingRight:'10px', fontSize: '10px' }} fixedWidth />
+                   <FontAwesomeIcon icon={faCaretRight}  style={{ color: "orange", paddingRight:'10px', width: "20px" }} fixedWidth />
                       {item}
                 </li>
               ))}
@@ -51,7 +51,7 @@ export default function TopDistricts(props: ITopDistrictsProps) {
             <ul className={style["content__items--ul"]}>
               {topDistricts.data2.map((item,index)=>(
                 <li key={index} className={style["content__items--ul--li"]}> 
-                   <FontAwesomeIcon icon={faCaretRight} size="sm" style={{ color: "orange", paddingRight:'5px', fontSize: '10px' }} fixedWidth />
+                   <FontAwesomeIcon icon={faCaretRight} size="sm" style={{ color: "orange", paddingRight:'5px', width: "20px" }} fixedWidth />
                       {item}
                 </li>
               ))}
@@ -61,7 +61,7 @@ export default function TopDistricts(props: ITopDistrictsProps) {
             <ul className={style["content__items--ul"]}>
               {topDistricts.data3.map((item,index)=>(
                 <li key={index} className={style["content__items--ul--li"]}> 
-                   <FontAwesomeIcon icon={faCaretRight} size="sm" style={{ color: "orange", paddingRight:'5px', fontSize: '10px' }} fixedWidth />
+                   <FontAwesomeIcon icon={faCaretRight} size="sm" style={{ color: "orange", paddingRight:'5px',  width: "20px" }} fixedWidth />
                       {item}
                 </li>
               ))}

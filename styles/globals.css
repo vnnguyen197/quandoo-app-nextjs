@@ -1,7 +1,7 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   font-family: Averta, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -14,10 +14,12 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .slick-slide {
-  width: 280px !important;
+  width: 304px !important;
 }
 .slick-prev {
   display: block;
@@ -27,8 +29,8 @@ a {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  left: -7px !important;
-  top: 34%;
+  left: -13px !important;
+  top: 33%;
 }
 .slick-disabled {
   display: none !important;
@@ -41,8 +43,8 @@ a {
   border-radius: 50%;
   width: 30px !important;
   height: 30px !important;
-  right: -10px !important;
-  top: 27% !important;
+  right: 0px !important;
+  top: 30% !important;
 }
 .slick-prev::before,
 .slick-next::before {

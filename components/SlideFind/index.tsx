@@ -7,7 +7,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 export interface SildeFindProps {}
 
 const data = {
-  h1: "It's time to treat yourseft.",
+  h1: "It's time to treat yourself.",
   h2: "Let's book you a table - the Quandoo way."
 }
 

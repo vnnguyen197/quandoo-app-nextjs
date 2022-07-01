@@ -17,7 +17,7 @@ export default function Directory (props: IDirectoryProps) {
   return (
     <div className={style.directory}>
       <div className={style.directory__top}>
-        <h2 className={style.directory__h2}> {directory.big_title1} <span className={style["directory__h2--span"]}>{directory.span}</span> {directory.big_title2} </h2>
+        <div className={style.directory__h2}> {directory.big_title1} <span className={style["directory__h2--span"]}>{directory.span}</span> {directory.big_title2} </div>
         <div className={style.directory__img}>
           <div className={style.directory__content}>
               <span className={style["directory__content--span"]}>{directory.location}</span>

@@ -1,20 +1,19 @@
 .content {
-  max-width: 1210px;
+  width: 1210px;
+  max-width: 100%;
   margin: 0px auto;
-  display: flex;
-  justify-content: center;
   background-color: rgb(255, 255, 255);
-  flex-wrap: wrap;
   &__border {
     width: 784px;
     border-top: 1px solid rgba(128, 128, 128, 0.266);
-    padding-top: 50px;
+    margin: auto;
   }
   &__h1 {
     font-size: 26px;
     color: #3a4354;
     font-weight: 650;
-    padding-bottom: 30px;
+    padding: 30px 0;
+    text-align: center;
     &--span {
       color: #f8b333;
     }
@@ -22,7 +21,7 @@
   &__bottom {
     flex-direction: row;
     display: flex;
-    gap: 140px;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
   &__items {

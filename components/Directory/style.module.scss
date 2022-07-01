@@ -1,7 +1,7 @@
 .directory {
-  max-width: 1210px;
+  width: 1210px;
+  max-width: 100%;
   margin: 0px auto;
-  padding-top: 50px;
   &__top {
     width: 644px;
     margin-left: auto;
@@ -12,7 +12,7 @@
     color: #3a4354;
     font-weight: 650;
     text-align: center;
-    padding-bottom: 48px;
+    padding: 40px 0;
     &--span {
       color: #f8b333;
     }
@@ -70,7 +70,8 @@
       color: rgb(255, 255, 255);
       margin: 0px;
       padding-right: 15px;
-      width: 250px;
+      width: 255px;
+      padding-bottom: 20px;
     }
     &--sub {
       font-weight: 400;
@@ -95,7 +96,6 @@
     }
   }
   &__collapse {
-    box-shadow: rgb(51 51 51 / 20%) 0px 1px 2px;
     margin-bottom: 15px;
     &--h3 {
       font-weight: 650;
@@ -131,7 +131,7 @@
 @media (min-width: 320px) and (max-width: 600px) {
   .directory__h2 {
     font-size: 24px !important;
-    padding: 0 24px;
+    padding: 25px 24px;
   }
   .directory__top {
     width: 100% !important;
@@ -139,7 +139,6 @@
     margin-right: auto;
   }
   .directory__content {
-    margin-top: 48px;
     background-image: linear-gradient(
         90deg,
         rgb(0, 0, 0) 30%,

@@ -9,11 +9,13 @@
   &__input {
     display: flex;
   }
-  &__content {
-    padding: 0 15%;
+  &__content{
+    width: 1100px;
+    max-width: 100%;
+    margin: auto;
   }
   &__contentCenter {
-    padding-top: 125px;
+    padding-top: 120px;
     margin-bottom: 84px;
     &--h1 {
       color: #ffff;
@@ -64,9 +66,6 @@
 @media (min-width: 1024px) and (max-width: 1920px) {
   .slide {
     padding-top: 69px !important;
-    &__content{
-      padding: 0px 7%;
-    }
     &__img {
       height: 720px !important;
       background-position: center !important;
@@ -84,9 +83,8 @@
     height: 488px !important;
     background-position: center !important;
   }
-  .slide__content {
-    margin: 0 !important;
-    padding: 0 5%;
+  .slide__content{
+    padding: 0 8%;
   }
   .slide__contentCenter {
     margin: auto;
@@ -104,7 +102,6 @@
     width: 100% !important;
     position: relative;
     display: flex !important;
-    top: 37px;
     &--icon {
       position: absolute;
       width: 25px;
@@ -122,12 +119,10 @@
       font-size: 14px;
       color: #63717f;
       padding-left: 45px;
-      border-radius: 5px;
+      border-radius: 10px;
     }
   }
-  .slide__find,
-  .slide__singapore,
-  .slide__button {
+  .slide__find, .slide__singapore, .slide__button {
     display: none;
   }
 }

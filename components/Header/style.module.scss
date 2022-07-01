@@ -108,16 +108,18 @@
     &--right4 {
       display: flex !important;
       font-size: 12px !important;
+      height: 30px !important;
     }
     &--user {
       display: flex !important;
       justify-content: center;
       align-items: center;
+      height: 30px !important;
     }
   }
   .header__iconUser {
-    width: 33px !important; 
-    height: 33px !important;
+    width: 30px !important; 
+    height: 30px !important;
   }
   .header__left{
     width: 125px !important;

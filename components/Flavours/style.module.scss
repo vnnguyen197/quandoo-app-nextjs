@@ -1,5 +1,6 @@
 .content {
-  max-width: 1210px;
+  width: 1210px;
+  max-width: 100%;
   margin: 0px auto;
   &__top--h3 {
     font-weight: 700;
@@ -38,6 +39,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-width: 200px;
     }
     &--img:hover {
       cursor: pointer;
