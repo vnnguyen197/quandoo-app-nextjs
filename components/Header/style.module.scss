@@ -35,7 +35,7 @@
     color: #3a4354b3;
     border-left: 1px solid rgba(128, 128, 128, 0.077);
     padding: 0 10px;
-    height: 68px;
+    height: 100%;
     &--user {
       display: none;
     }
@@ -43,7 +43,7 @@
   &__item1 {
     color: #1873c3;
     padding-right: 20px;
-    height: 68px;
+    height: 100%;
     display: flex;
     align-items: center;
   }
@@ -56,6 +56,9 @@
 @media only screen and (min-width: 1920px) {
   .header__right{
     font-size: 14px !important;
+  }
+  .header-right{
+    height: 68px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {

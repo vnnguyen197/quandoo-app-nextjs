@@ -98,11 +98,7 @@
   .content {
     display: block !important;
     padding: 50px 24px 0px !important;
-    &__h1 {
-      display: flex;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-    }
+  
     &__border {
       width: 270px !important;
       margin-left: auto !important;
