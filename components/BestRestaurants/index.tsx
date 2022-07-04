@@ -40,6 +40,7 @@ export default function BestRestaurants(props: IBestRestaurantsProps) {
                     alt={item.title}
                     width={323}
                     height={182}
+                    objectFit = 'cover'
                   />
                 </div>
                 <div className={style.content__title}>

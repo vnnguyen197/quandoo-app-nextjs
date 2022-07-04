@@ -55,3 +55,6 @@ a {
 .slick-track {
   min-width: 2500px !important;
 }
+p{
+  margin-bottom: 0 !important;
+}
