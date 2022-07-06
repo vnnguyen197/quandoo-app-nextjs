@@ -1,17 +1,16 @@
 .content {
-  width: 1210px;
-  max-width: 100%;
-  margin: 0px auto;
+  margin: 0 auto;
+  padding: 0 4.8rem;
   &__top--h3 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 2.6rem;
     line-height: 28px;
     color: rgb(58, 67, 84);
   }
   &__top--span {
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1.9rem;
     line-height: 24px;
     color: rgba(58, 67, 84, 0.7);
     margin-bottom: 100px;
@@ -26,6 +25,7 @@
       border: 1px solid #76839c;
       color: #ffff;
       font-weight: bold;
+      font-size: 1.5rem;
     }
   }
   &__bottom {
@@ -54,6 +54,7 @@
       width: 102px;
       text-align: center;
       margin: 0;
+      font-size: 1.4rem;
       &:hover {
         cursor: pointer;
       }
@@ -62,23 +63,23 @@
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .content {
-    padding: 20px 40px !important;
+    padding: 0 3.2rem !important;
     &__top--h3 {
-      font-size: 21px !important;
+      font-size: 2.2rem !important;
     }
     &__top--span {
-      font-size: 16px !important;
+      font-size: 1.7rem !important;
     }
   }
 }
 @media (min-width: 320px) and (max-width: 600px) {
   .content {
-    padding: 20px 20px !important;
+    padding: 0 2.4rem !important;
     &__top--h3 {
-      font-size: 21px !important;
+      font-size: 2.2rem !important;
     }
     &__top--span {
-      font-size: 16px !important;
+      font-size: 1.7rem !important;
     }
   }
 }

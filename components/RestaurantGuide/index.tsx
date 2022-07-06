@@ -65,7 +65,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
   };
 
   return (
-    <div className={style.content}>
+    <div className={`container ${style.content}`}>
       <h2 className={style.content__h2}> {restaurantsguide.title_main1} <span className={style["content__h2--span"]}>{restaurantsguide.title_span}</span> {restaurantsguide.title_main2} </h2>
       <div className={style.content__find}>
         <h3 className={style["content__find--h3"]}> {restaurantsguide.tilte_child} </h3>

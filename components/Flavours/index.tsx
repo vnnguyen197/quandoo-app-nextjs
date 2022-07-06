@@ -8,7 +8,7 @@ export interface IFlavoursProps {
 
 export default function Flavours (props: IFlavoursProps) {
   return (
-    <div className={style.content}> 
+    <div className={`container ${style.content}`}> 
       <div className={style.content__top}>
           <h3 className={style["content__top--h3"]}>{flavours.title}</h3>
           <span className={style["content__top--span"]}>{flavours.sub_title}</span>

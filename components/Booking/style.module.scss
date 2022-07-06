@@ -1,15 +1,13 @@
 .content {
-  width: 1210px;
-  max-width: 100%;
-  margin: 0px auto;
+  margin: 0 auto;
   background-color: rgb(255, 255, 255);
   &__border {
     width: 784px;
     border-top: 1px solid rgba(128, 128, 128, 0.266);
-    margin: auto;
+    margin: 50px auto 0;
   }
   &__h1 {
-    font-size: 26px;
+    font-size: 2.5rem;
     color: #3a4354;
     font-weight: 650;
     padding: 30px 0;
@@ -36,7 +34,7 @@
     justify-content: center;
     align-items: center;
     &--h2 {
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 650;
       padding-top: 30px;
       color: #3a4354;
@@ -45,6 +43,7 @@
       width: 240px;
       text-align: center;
       color: #3a4354e6;
+      font-size: 1.6rem;
     }
   }
 }
@@ -52,7 +51,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .content {
     display: block !important;
-    padding: 50px 32px 0px !important;
+    padding: 0 3.2rem;
     &__h1 {
       display: flex;
       justify-content: center;
@@ -76,7 +75,7 @@
       justify-content: flex-start !important;
       align-items: flex-start !important;
       &--h2 {
-        font-size: 18px !important;
+        font-size: 1.9rem !important;
         color: #3a4354;
       }
       &--span {
@@ -95,8 +94,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .content {
     display: block !important;
-    padding: 50px 24px 0px !important;
-  
+    padding: 0 2.4rem !important;
     &__border {
       width: 270px !important;
       margin-left: auto !important;
@@ -125,10 +123,11 @@
       justify-content: flex-start !important;
       align-items: flex-start !important;
       &--h2 {
-        font-size: 18px !important;
+        font-size: 1.9rem !important;
         color: #3a4354;
       }
       &--span {
+        font-size: 1.5rem;
         color: #3a4354e6;
         width: 100%;
         text-align: left !important;

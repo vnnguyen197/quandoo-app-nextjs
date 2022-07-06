@@ -7,7 +7,7 @@ export interface IBookingProps {}
 
 export default function Booking(props: IBookingProps) {
   return (
-    <div className={style.content}>
+    <div className={`container ${style.content}`}>
       <div className={style.content__border}><div className={style["content__border--item"]}></div></div>
       <div className={style.content__h1}>  {booking.title} <span className={style["content__h1--span"]}> {booking.span}  </span> </div>
       <div className={style.content__bottom}>

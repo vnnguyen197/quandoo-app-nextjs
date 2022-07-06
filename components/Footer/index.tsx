@@ -18,7 +18,7 @@ export interface FooterProps {}
 function Footer(props: FooterProps) {
   return (
     <div className={style.footer}>
-      <div className={style.footer__main}>
+      <div className={`container ${style.footer__main}`}>
         {dataFooter.map((item, index) => (
           <div className={style.footer__item} key={index}>
             <div className={style['footer__item--des']}>

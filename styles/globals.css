@@ -1,12 +1,15 @@
 html,
 body {
-  /* padding: 0;
-  margin: 0; */
   font-family: Averta, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-}
+    box-sizing: border-box;
 
+}
+.container{
+  width: 1210px !important;
+  max-width: 100% !important;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -17,6 +20,11 @@ a {
   padding: 0;
   margin: 0;
 }
+html{
+  font-size: 62.5%; 
+  /* 1rem = 10px */
+} 
+
 
 .slick-slide {
   width: 304px !important;
@@ -29,8 +37,8 @@ a {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  left: -13px !important;
-  top: 33%;
+  left: -15px !important;
+  top: 30%;
 }
 .slick-disabled {
   display: none !important;

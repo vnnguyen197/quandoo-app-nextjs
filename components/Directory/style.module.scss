@@ -1,14 +1,13 @@
 .directory {
-  width: 1210px;
-  max-width: 100%;
-  margin: 0px auto;
+  padding: 0;
+  margin: 0 auto;
   &__top {
     width: 644px;
     margin-left: auto;
     margin-right: auto;
   }
   &__h2 {
-    font-size: 28px;
+    font-size: 2.9rem;
     color: #3a4354;
     font-weight: 650;
     text-align: center;
@@ -29,7 +28,7 @@
       border-radius: 10px;
       border: 1px solid rgba(128, 128, 128, 0.382);
       color: #ffff;
-      font-size: 18px;
+      font-size: 1.9rem;
       font-weight: bold;
       background-color: #f8b333;
       &:hover {
@@ -57,7 +56,7 @@
     &--span {
       font-weight: 600;
       font-style: normal;
-      font-size: 14px;
+      font-size: 1.5rem;
       line-height: 20px;
       color: rgb(255, 255, 255);
       margin: 0px;
@@ -65,7 +64,7 @@
     }
     &--h2 {
       font-weight: 700;
-      font-size: 28px;
+      font-size: 2.9rem;
       line-height: 32px;
       color: rgb(255, 255, 255);
       margin: 0px;
@@ -76,21 +75,20 @@
     &--sub {
       font-weight: 400;
       font-style: normal;
-      font-size: 18px;
+      font-size: 1.9rem;
       line-height: 24px;
       color: rgb(255, 255, 255);
       padding-bottom: 20px;
     }
   }
   &__bottom {
-    margin-bottom: 48px;
+    margin: 0 auto 50px;
     max-width: 690px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 3.2rem;
     &--h3 {
       padding: 35px 0;
       font-weight: 700;
-      font-size: 25px;
+      font-size: 2.6rem;
       line-height: 32px;
       color: rgb(58, 67, 84);
     }
@@ -99,7 +97,7 @@
     margin-bottom: 15px;
     &--h3 {
       font-weight: 650;
-      font-size: 18px;
+      font-size: 1.9rem;
       margin: 0px;
       padding: 0px;
       color: #3a4354e6;
@@ -130,7 +128,7 @@
 
 @media (min-width: 320px) and (max-width: 600px) {
   .directory__h2 {
-    font-size: 24px !important;
+    font-size: 2.5rem !important;
     padding: 25px 24px;
   }
   .directory__top {
@@ -152,19 +150,19 @@
     border-radius: 0px !important;
     &--h2 {
       width: 280px;
-      font-size: 25px;
+      font-size: 2.6rem;
       padding-bottom: 10px;
     }
   }
   .directory__bottom {
     margin: 0 24px !important;
     &--h3 {
-      font-size: 24px !important;
+      font-size: 2.5rem !important;
     }
   }
   .directory__collapse {
     &--h3 {
-      font-size: 17px !important;
+      font-size: 1.8rem !important;
     }
   }
 }
