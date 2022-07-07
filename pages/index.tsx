@@ -22,11 +22,11 @@ const Home: NextPage = () => {
       <RestaurantGuide />
       <Districts />
       <Booking />
-       <BookingApp />
-      <Directory/>
-      <Flavours  />  
-      <BestRestaurants/>
-     <TopDistricts/>
+      <BookingApp />
+      <Directory />
+      <Flavours />
+      <BestRestaurants />
+      <TopDistricts />
     </div>
   );
 };
