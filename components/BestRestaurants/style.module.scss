@@ -3,7 +3,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0px auto;
-  padding-top: 5rem;
+  padding-top: 5rem !important;
   &__left {
     padding: 190px 0 100px;
     flex: 0 1 480px;
@@ -48,7 +48,7 @@
   }
 
   &__right {
-    width: 570px;
+    width: 550px;
   }
   &__food {
     box-sizing: border-box;
@@ -175,7 +175,7 @@
       padding-top: 100px;
       padding-bottom: 40px !important;
       flex: 0 1 370px;
-      background-size: 100px;
+      background-size: 140px;
       background-position-y: 10px;
       &--subtitle {
         font-size: 1.5rem;
@@ -193,7 +193,7 @@
     &__titleRight {
       &--h5 {
         white-space: nowrap;
-        width: 216px;
+        width: 195px;
         overflow: hidden;
         text-overflow: ellipsis;
       }

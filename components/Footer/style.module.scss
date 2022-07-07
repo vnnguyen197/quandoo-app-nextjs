@@ -117,18 +117,18 @@
 // apply to mobile
 @media (min-width: 320px) and (max-width: 600px) {
   .footer{
-    padding: 8rem 2rem 3rem;
+    padding: 5rem 2.4rem;
 }
   .footer__main {
     flex-flow: column nowrap;
     display: block;
+    padding: 0;
   }
   .footer__item--des {
     display: none !important;
   }
   .footer__item--mobile {
     display: block;
-    padding: 0 0.5rem;
     flex-basis: 50%;
     margin-bottom: 4rem;
     &--collapse {

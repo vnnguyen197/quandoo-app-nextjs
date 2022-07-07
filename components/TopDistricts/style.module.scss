@@ -19,7 +19,7 @@
     &--tab {
       margin-left: 25px !important;
       text-transform: none;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       font-weight: 700;
     }
   }
@@ -37,9 +37,9 @@
       &--li {
         display: flex;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding: 3px 10px;
-        width: 250px;
+        width: 300px;
         color: rgba(58, 67, 84, 0.7);
       }
     }
@@ -112,7 +112,7 @@
     &__collapse {
       &--h3 {
         font-weight: 700;
-        font-size: 1.6rem;
+        font-size: 1.6rem ;
         margin: 10px 0;
         padding: 0px;
         color: #3a4354e6;

@@ -89,7 +89,7 @@ export default function TopDistricts(props: ITopDistrictsProps) {
 
         <Accordion className={style.content__collapse} expanded={expandedPanel === "panel2"} onChange={handleOnChange("panel2")}>
           <AccordionSummary  expandIcon={<ExpandMore style={{ color: "black" }} />}>
-              <h5 className={style["content__collapse--h3"]}> {topDistricts.title2} </h5>
+              <h3 className={style["content__collapse--h3"]}> {topDistricts.title2} </h3>
           </AccordionSummary>
           <AccordionDetails className={style.content__subtitle}>
             <ul className={style["content__subtitle--ul"]}>
