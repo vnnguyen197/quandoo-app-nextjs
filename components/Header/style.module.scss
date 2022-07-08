@@ -40,6 +40,10 @@
     &--user {
       display: none;
     }
+    &:hover{
+      cursor: pointer;
+      user-select: none;
+    }
   }
   &__item1 {
     color: #1873c3;
@@ -47,6 +51,10 @@
     height: 100%;
     display: flex;
     align-items: center;
+    &:hover{
+      cursor: pointer;
+      user-select: none ;
+    }
   }
   &__icon {
     height: 13px;

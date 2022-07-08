@@ -80,12 +80,24 @@
     }
   }
 }
-@media (min-width: 769px) and (max-width: 1023px) {
-  .slide__content{
-    padding: 0 32px !important;
-  }
-}
-@media (min-width: 320px) and (max-width: 768px) {
+// @media (min-width: 769px) and (max-width: 1023px) {
+//   .slide {
+//     &__content{
+//       padding: 0 32px ;
+//     }
+//     &__img {
+//       height: calc(650px + 70px)!important;
+//       background-position: center !important;
+//     }
+//     &__button {
+//       width: 10% !important;
+//     }
+//     &__search {
+//       display: none !important;
+//     }
+//   }
+// }
+@media (min-width: 320px) and (max-width: 1023px) {
   .slide__img {
     height: calc(420px + 70px) !important;
     background-position: center !important;

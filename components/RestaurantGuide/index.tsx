@@ -17,7 +17,6 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
 
   const settings = {
     className : `${style.slider_restaurants}`,
-    // className : `${style.slick_list}`,
     dots: false,
     speed: 500,
     slidesToShow: 4,
@@ -28,7 +27,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
         breakpoint: 1366,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: false,
           dots: false,
         },
@@ -43,11 +42,10 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
-          slidesToShow: 2.4,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 2.54,
+          slidesToScroll: 1,
           infinite: false,
           arrows: true,
         },
@@ -55,7 +53,16 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.4,
+          slidesToShow: 1.31,
+          slidesToScroll: 1,
+          infinite: false,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1.17,
           slidesToScroll: 1,
           infinite: false,
           arrows: true,
