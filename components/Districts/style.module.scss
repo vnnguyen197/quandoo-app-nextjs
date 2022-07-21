@@ -1,20 +1,20 @@
 .content {
-  max-width: 1210px;
-  margin: 0px auto;
-  padding-left: 10px;
-  padding-bottom: 50px;
+  margin: 0 auto;
+  padding: 0;
   &__title--h2 {
-    font-size: 24px;
+    font-size: 2.5rem;
     color: #3a4354;
     font-weight: 650;
+    padding-top: 3rem;
   }
   &__title--p {
     color: #3a4354b3;
-    font-size: 18px;
+    font-size: 1.9rem;
+    padding-bottom: 15px;
   }
   &__buttons {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.9rem;
     font-weight: bold;
     color: #ffff;
     box-sizing: border-box;
@@ -52,34 +52,34 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin-right: -12px !important;
+    justify-content: space-between;
   }
 }
-
 @media (min-width: 1024px) and (max-width: 1920px) {
-  .content{
-    padding: 0 48px !important;
-    &__buttons{
+  .content {
+    padding: 0 4.8rem;
+    &__buttons {
       flex: 1 1 0%;
     }
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .content{
-    padding: 0 32px !important;
-  &__buttons{
-    max-width: 198px !important;
+  .content {
+    padding: 0 3.2rem !important;
+    &__buttons {
+      width: 200px !important;
+      max-width: 100% !important;
+    }
   }
-}
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .content {
-    padding: 0 24px !important;
+    padding: 0 2.4rem !important;
     &__title--h2 {
-      font-size: 20px;
+      font-size: 2.1rem;
     }
     &__title--p {
-      font-size: 14px;
+      font-size: 1.5rem;
     }
   }
 }

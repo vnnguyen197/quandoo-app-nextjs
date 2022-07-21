@@ -17,7 +17,6 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
 
   const settings = {
     className : `${style.slider_restaurants}`,
-    // className : `${style.slick_list}`,
     dots: false,
     speed: 500,
     slidesToShow: 4,
@@ -28,7 +27,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
         breakpoint: 1366,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: false,
           dots: false,
         },
@@ -43,11 +42,10 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
-          slidesToShow: 2.4,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 2.54,
+          slidesToScroll: 1,
           infinite: false,
           arrows: true,
         },
@@ -55,7 +53,16 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.4,
+          slidesToShow: 1.31,
+          slidesToScroll: 1,
+          infinite: false,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1.17,
           slidesToScroll: 1,
           infinite: false,
           arrows: true,
@@ -65,7 +72,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
   };
 
   return (
-    <div className={style.content}>
+    <div className={`container ${style.content}`}>
       <h2 className={style.content__h2}> {restaurantsguide.title_main1} <span className={style["content__h2--span"]}>{restaurantsguide.title_span}</span> {restaurantsguide.title_main2} </h2>
       <div className={style.content__find}>
         <h3 className={style["content__find--h3"]}> {restaurantsguide.tilte_child} </h3>
@@ -77,7 +84,7 @@ export default function RestaurantGuide(props: IRestaurantGuideProps) {
             <div className={style.content__food} key={index} {...restaurantsguide}>
               <Link href={`/quandoo/${item.id}`}>
                   <div className={style.content__box}>
-                      <Image style={{borderRadius: "8px"}} className={style["content__box--img--item"]} src={item.img} alt={item.title} width={323} height={182} />
+                      <Image style={{borderRadius: "8px"}} className={style["content__box--img--item"]} src={item.img} alt={item.title} width={340} height={185} />
                       <div className={style.content__title}>
                         {item.title.length > 36 ? (
                           <h3 className={style["content__title--h3"]}>{item.title.slice(0, 36)}...</h3>

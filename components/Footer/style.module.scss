@@ -1,50 +1,48 @@
 .footer {
   display: flex;
   justify-content: center;
-  padding: 155px 30px 30px;
+  padding: 15.5rem 3rem 3rem;
   background-color: rgb(35, 40, 51);
   color: #ffff;
-  margin-top: 10px;
   &__main {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 100%;
-    max-width: 1385px;
     justify-content: center;
   }
   &__item {
     flex: 1 1 0%;
-    padding-right: 0px;
+    padding-right: 0;
     &--mobile {
       display: none;
     }
     &--des {
       &--title {
         color: #ffffffcc;
-        padding: 8px 0;
-        font-size: 16px !important;
+        padding: 0.8rem 0;
+        font-size: 1.6rem !important;
       }
       &--h3 {
-        font-size: 17px;
+        font-size: 1.7rem;
         font-weight: bold;
-        padding-bottom: 16px;
+        padding-bottom: 1.6rem;
       }
     }
   }
   &__social {
     flex: 1 1 0%;
-    padding-right: 25px;
+    padding-right: 2.5rem;
     &--h3 {
-      font-size: 17px;
+      font-size: 1.7rem;
       font-weight: bold;
-      padding-bottom: 5px;
+      padding-bottom: 0.5rem;
     }
     &--item1 {
       width: 25px;
       height: 25px;
     }
     &--item2 {
-      margin-left: 20px;
+      margin-left: 2rem;
       width: 25px;
       height: 25px;
     }
@@ -55,12 +53,12 @@
     &--icons {
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
     &--h3 {
-      font-size: 17px;
+      font-size: 1.7rem;
       font-weight: bold;
-      padding-bottom: 20px;
+      padding-bottom: 2rem;
     }
   }
   &__bottom {
@@ -69,8 +67,8 @@
     align-items: flex-start;
     flex: 0 1 100%;
     color: rgba(255, 255, 255, 0.4);
-    font-size: 14px;
-    margin-top: 40px;
+    font-size: 1.4rem;
+    margin-top: 4rem;
     &--img {
       display: flex;
       flex-shrink: 0;
@@ -79,12 +77,12 @@
       height: 100%;
       flex-direction: column;
       &--footer{
-        padding: 10px 0;
+        padding: 1rem 0;
       }
     }
   }
   &__googleplay {
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
   }
 }
 
@@ -93,11 +91,13 @@
   .footer__main {
     flex-wrap: wrap;
     justify-content: space-between !important;
+    padding: 0 !important; 
+
   }
   .footer__item {
     flex-basis: 50%;
-    margin-bottom: 40px; 
-    padding-right: 0px;
+    margin-bottom: 4rem; 
+    padding-right: 0;
   }
   .footer__social {
     flex-basis: 50%;
@@ -110,38 +110,38 @@
     padding: 0px !important;
   }
   .footer__googleplay {
-    padding-right: 20px;
+    padding-right: 2rem;
   }
 }
 
 // apply to mobile
 @media (min-width: 320px) and (max-width: 600px) {
   .footer{
-    padding: 80px 20px 30px;
+    padding: 5rem 2.4rem;
 }
   .footer__main {
     flex-flow: column nowrap;
     display: block;
+    padding: 0;
   }
   .footer__item--des {
     display: none !important;
   }
   .footer__item--mobile {
     display: block;
-    padding: 0 5px;
     flex-basis: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     &--collapse {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 14px;
+      font-size: 1.4rem;
       &--h3 {
-        font-size: 18px;
-        padding: 10px 0;
+        font-size: 1.8rem;
+        padding: 1rem 0;
       }
       &--icons--item {
-        padding-right: 20px !important;
+        padding-right: 2rem !important;
         height: 20px !important;
       }
     }
@@ -150,12 +150,11 @@
     display: block;
     &--item {
       color: #ffffffcc;
-      padding: 8px 0;
-      font-size: 16px !important;
+      padding: 0.8rem 0;
+      font-size: 1.6rem !important;
     }
   }
   .footer__social {
-    // padding: 30px 0 !important;
     &--h3 {
       display: none;
     }
@@ -170,7 +169,7 @@
     }
   }
   .footer__bottom{
-    margin: 0px !important;
+    margin: 0 !important;
     &--img--footer{
       width: 128px !important;
       height: 40px !important;
@@ -183,14 +182,14 @@
   .footer__apps--icons {
     display: flex;
     flex-flow: row wrap;
-    margin: 30px 0px 40px;
+    margin: 3rem 0 4rem;
   }
   .footer__googleplay {
-    padding-right: 10px;
+    padding-right: 1rem;
   }
 
   .footer__intro {
-    font-size: 13px !important;
+    font-size: 1.3rem !important;
     color: #ffffffcc !important;
   }
 }

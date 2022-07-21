@@ -1,18 +1,17 @@
 .directory {
-  max-width: 1210px;
-  margin: 0px auto;
-  padding-top: 50px;
+  padding: 0;
+  margin: 0 auto;
   &__top {
     width: 644px;
     margin-left: auto;
     margin-right: auto;
   }
   &__h2 {
-    font-size: 28px;
+    font-size: 2.9rem;
     color: #3a4354;
     font-weight: 650;
     text-align: center;
-    padding-bottom: 48px;
+    padding: 40px 0;
     &--span {
       color: #f8b333;
     }
@@ -29,7 +28,7 @@
       border-radius: 10px;
       border: 1px solid rgba(128, 128, 128, 0.382);
       color: #ffff;
-      font-size: 18px;
+      font-size: 1.9rem;
       font-weight: bold;
       background-color: #f8b333;
       &:hover {
@@ -57,7 +56,7 @@
     &--span {
       font-weight: 600;
       font-style: normal;
-      font-size: 14px;
+      font-size: 1.5rem;
       line-height: 20px;
       color: rgb(255, 255, 255);
       margin: 0px;
@@ -65,45 +64,53 @@
     }
     &--h2 {
       font-weight: 700;
-      font-size: 28px;
+      font-size: 2.9rem;
       line-height: 32px;
       color: rgb(255, 255, 255);
       margin: 0px;
       padding-right: 15px;
-      width: 250px;
+      width: 255px;
+      padding-bottom: 20px;
     }
     &--sub {
       font-weight: 400;
       font-style: normal;
-      font-size: 18px;
+      font-size: 1.9rem;
       line-height: 24px;
       color: rgb(255, 255, 255);
       padding-bottom: 20px;
     }
   }
   &__bottom {
-    margin-bottom: 48px;
+    margin: 0 auto 50px;
     max-width: 690px;
-    margin-left: auto;
-    margin-right: auto;
     &--h3 {
       padding: 35px 0;
       font-weight: 700;
-      font-size: 25px;
+      font-size: 2.6rem;
       line-height: 32px;
       color: rgb(58, 67, 84);
     }
   }
   &__collapse {
-    box-shadow: rgb(51 51 51 / 20%) 0px 1px 2px;
     margin-bottom: 15px;
+    font-size: 1.5rem;
     &--h3 {
       font-weight: 650;
-      font-size: 18px;
+      font-size: 1.9rem;
       margin: 0px;
       padding: 0px;
       color: #3a4354e6;
     }
+  }
+  &__subtitle{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: rgba(58, 67, 84, 0.9);
+    margin: 0px 0px 24px;
+    padding: 0px;
   }
 }
 
@@ -130,8 +137,8 @@
 
 @media (min-width: 320px) and (max-width: 600px) {
   .directory__h2 {
-    font-size: 24px !important;
-    padding: 0 24px;
+    font-size: 2.5rem !important;
+    padding: 25px 24px;
   }
   .directory__top {
     width: 100% !important;
@@ -139,7 +146,6 @@
     margin-right: auto;
   }
   .directory__content {
-    margin-top: 48px;
     background-image: linear-gradient(
         90deg,
         rgb(0, 0, 0) 30%,
@@ -153,19 +159,19 @@
     border-radius: 0px !important;
     &--h2 {
       width: 280px;
-      font-size: 25px;
+      font-size: 2.6rem;
       padding-bottom: 10px;
     }
   }
   .directory__bottom {
-    margin: 0 24px !important;
+    margin: 0 2.4rem !important;
     &--h3 {
-      font-size: 24px !important;
+      font-size: 2.5rem !important;
     }
   }
   .directory__collapse {
     &--h3 {
-      font-size: 17px !important;
+      font-size: 1.8rem !important;
     }
   }
 }

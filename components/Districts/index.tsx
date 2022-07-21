@@ -7,7 +7,7 @@ export interface IDistrictsProps {}
 
 export default function Districts(props: IDistrictsProps) {
   return (
-    <div className={style.content}>
+    <div className={`container ${style.content}`}>
       <div className={style.content__title}>
         <h2 className={style["content__title--h2"]}>{districts.h2}</h2>
         <p className={style["content__title--p"]}>{districts.h3}</p>

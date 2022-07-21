@@ -2,26 +2,26 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1210px;
   margin: 0px auto;
-  padding-top: 50px;
+  padding-top: 5rem !important;
+  padding: 0 4.8rem;
   &__left {
-    padding: 190px 0 100px;
     flex: 0 1 480px;
     justify-content: space-between;
     padding-top: 190px;
     background: url(https://assets-www.web-dev.euwest1.aws.quandoo.com/12.158.3/static/media/plate-v-2.fdf37789.png)
       left 58px no-repeat;
     &--title {
-      font-size: 40px;
+      font-size: 4.1rem;
       color: rgb(58, 67, 84);
       padding-top: 30px;
-      &--h2 {
+      &--h1 {
         font-weight: 650;
+        font-size: 4.1rem;
       }
     }
     &--subtitle {
-      font-size: 19px;
+      font-size: 1.9rem;
       line-height: 27px;
       color: rgba(58, 67, 84, 0.9);
       padding: 25px 0;
@@ -30,7 +30,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 18px;
+      font-size: 1.9rem;
       font-weight: bold;
       width: 252px;
       height: 47px;
@@ -48,7 +48,7 @@
   }
 
   &__right {
-    width: 570px;
+    width: 550px;
   }
   &__food {
     box-sizing: border-box;
@@ -79,6 +79,7 @@
     display: flex;
     border-radius: 8px;
     overflow: hidden;
+    object-fit: cover;
   }
   &__title {
     box-sizing: border-box;
@@ -105,24 +106,24 @@
       font-weight: bold;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-size: 14px;
+      font-size: 1.5rem;
     }
     &--range {
-      font-size: 12px;
+      font-size: 1.3rem;
       margin-top: 5px;
     }
     &--price {
       margin-left: 5px;
       color: rgba(58, 67, 84, 0.7);
-      font-size: 12px;
+      font-size: 1.3rem;
 
       &::before {
-        content: "•";
+        content: '•';
         margin-right: 5px;
       }
       &--bold {
         font-weight: 700;
-        font-size: 12px;
+        font-size: 1.3rem;
         color: black;
       }
     }
@@ -133,15 +134,15 @@
     border-radius: 18px;
     color: #fff;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1.3rem;
     &--span {
-      font-size: 10px;
+      font-size: 1.1rem;
     }
   }
   &__comment {
     color: rgba(58, 67, 84, 0.7);
     padding-left: 5px;
-    font-size: 12px;
+    font-size: 1.3rem;
   }
 
   &__button {
@@ -151,35 +152,36 @@
 
 @media (min-width: 600px) and (max-width: 1024px) {
   .content {
-    margin: 0px 48px !important;
+    padding: 0 3.2rem;
     &__left--title--h2 {
-      font-size: 40px;
+      font-size: 4.1rem;
       font-weight: bold;
       color: rgb(58, 67, 84);
     }
   }
 }
+@media (min-width: 1024px) and (max-width: 1900px) {
+  .content{
+    padding: 0 4.8rem;
+  }
+}
 @media (min-width: 320px) and (max-width: 600px) {
   .content {
-    margin: 0px 24px !important;
+    padding: 0 2.4rem;
     &__food {
       border-bottom: 0 !important;
-    }
-    &__right {
-      padding-right: 10px !important;
     }
     &__left {
       padding-top: 100px;
       padding-bottom: 40px !important;
       flex: 0 1 370px;
-      background-size: 100px;
+      background-size: 140px;
       background-position-y: 10px;
       &--subtitle {
-        font-size: 14px;
+        font-size: 1.5rem;
       }
-      &--title--h2 {
-        font-size: 26px !important;
-        font-weight: 800 !important;
+      &--title--h1 {
+        font-size: 2.7rem !important;
       }
       &--button {
         display: none;
@@ -191,7 +193,7 @@
     &__titleRight {
       &--h5 {
         white-space: nowrap;
-        width: 216px;
+        width: 195px;
         overflow: hidden;
         text-overflow: ellipsis;
       }
@@ -199,7 +201,7 @@
     &__button {
       width: 252px;
       height: 47px;
-      font-size: 18px;
+      font-size: 1.9rem;
       display: flex;
       justify-content: center;
       align-items: center;

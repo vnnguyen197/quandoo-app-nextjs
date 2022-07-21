@@ -8,7 +8,7 @@ export interface IBestRestaurantsProps {}
 
 export default function BestRestaurants(props: IBestRestaurantsProps) {
   return (
-    <div className={style.content}>
+    <div className={`container ${style.content}`}>
       <div className={style.content__left}>
         <div className={style["content__left--title"]}>
           <h1 className={style["content__left--title--h1"]}>
@@ -40,6 +40,7 @@ export default function BestRestaurants(props: IBestRestaurantsProps) {
                     alt={item.title}
                     width={323}
                     height={182}
+                    objectFit = 'cover'
                   />
                 </div>
                 <div className={style.content__title}>

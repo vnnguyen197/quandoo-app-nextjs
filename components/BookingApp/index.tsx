@@ -9,7 +9,7 @@ export interface IBookingAppProps {}
 
 export default function BookingApp(props: IBookingAppProps) {
   return (
-    <div className={style.booking}> 
+    <div className={`container ${style.booking}`}> 
       <div className={style.booking__app}>
         <div className={style.booking__content}>
           <div className={style.booking__left}>
