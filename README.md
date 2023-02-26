@@ -1,4 +1,4 @@
-# Welcome to 3-Clean 👋
+# Welcome to Quandoo-App 👋
 
 > ## 🚀 **Getting Started**
 >
